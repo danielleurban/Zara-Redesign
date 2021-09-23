@@ -1,0 +1,19 @@
+.logo{
+    max-height: 80px;
+}
+.navtext{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+.zaranav{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width:576px){
+    .mobilegoaway{
+    display: none;
+    }}
+    
