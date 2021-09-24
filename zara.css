@@ -17,3 +17,24 @@
     display: none;
     }}
     
+.imagebehindtext{
+position: relative;
+}
+
+.top-left {
+    position: absolute;
+    top: -16px;
+    left: 20px;
+      }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(gallientregular.ttf);
+    }
+      
+    .gal{
+        font-family: myFirstFont;
+        color: white;
+        font-size: 72px;
+        font-style: normal;
+    }
