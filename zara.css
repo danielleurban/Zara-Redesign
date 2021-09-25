@@ -43,6 +43,12 @@ position: relative;
     src: local('Gallient Regular'), url(./fonts/gallientregular.ttf)
         }
     
+    .galnumber{
+        font-family:'Gallient Regular';
+        color: white;
+        font-size: 72px;
+        font-style: normal;
+    }
     .galhome{
         font-family:'Gallient Regular';
         color: black;
@@ -78,7 +84,17 @@ position: relative;
     color: white;
     font-size: 24px;
 }
-
+@font-face {
+    font-family: 'Helvetica Neue LT Pro Medium Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue LT Pro Medium Condensed'), url(./fonts/HelveticaNeueLTProMdCn.woff) format('woff');
+}
+.newslettertext{
+    font-family:'Helvetica Neue LT Pro Medium Condensed';
+    color: black;
+    font-size: 22px;
+}
 
     .homeimagecontainer{
         position: relative;
@@ -107,4 +123,81 @@ position: relative;
     .homepageimageoverlay:hover{
         opacity: 1;
     }
+.newsletter{
+position: absolute;
+height: 148px;
+width: 510px;
+left: 55%;
+right: 0%;
+top: 100%;
+bottom: 0%;
+background: #FFFFFF;
+box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
 
+/*Form CSS copied from template, for email imput on home page*/
+.form-group {
+    margin-bottom: 1.5rem; }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 1.75rem + 2px);
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #111;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #e5e5e5;
+        border-radius: 0;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+        @media (prefers-reduced-motion: reduce) {
+          .form-control {
+            transition: none; } }
+        .form-control::-ms-expand {
+          background-color: transparent;
+          border: 0; }
+        .form-control:-moz-focusring {
+          color: transparent;
+          text-shadow: 0 0 0 #111; }
+        .form-control:focus {
+          color: #111;
+          background-color: #fff;
+          border-color: #1f1f1f;
+          outline: 0;
+          box-shadow: none; }
+        .form-control::-webkit-input-placeholder {
+          color: #767676;
+          opacity: 1; }
+        .form-control::-moz-placeholder {
+          color: #767676;
+          opacity: 1; }
+        .form-control:-ms-input-placeholder {
+          color: #767676;
+          opacity: 1; }
+        .form-control::-ms-input-placeholder {
+          color: #767676;
+          opacity: 1; }
+        .form-control::placeholder {
+          color: #767676;
+          opacity: 1; }
+        .form-control:disabled, .form-control[readonly] {
+          background-color: #d8d8d8;
+          opacity: 1; }
+      
+      select.form-control:focus::-ms-value {
+        color: #111;
+        background-color: #fff; }
+      
+      .form-control-file,
+      .form-control-range {
+        display: block;
+        width: 100%; }
+
+        .form-control-sm {
+            height: calc(1.5em + 1.625rem + 2px);
+            padding: 0.8125rem 1.25rem;
+            font-size: 0.9375rem;
+            line-height: 1.5; }
