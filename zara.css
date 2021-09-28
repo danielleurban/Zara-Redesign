@@ -17,6 +17,7 @@
   color: black;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: 500;
 }
 .zaranav {
@@ -30,12 +31,22 @@
   }
 }
 
+@media (min-width: 576px) {
+  .mobileonly {
+    display: none;
+  }
+}
+
+
 /*Home Page Things*/
 
+
+  
+@media (min-width: 576px) {
 .nopadding {
   padding-left: 0%;
   padding-right: 0%;
-}
+}}
 
 .imagebehindtext {
   position: relative;
@@ -102,6 +113,25 @@
   font-weight: normal;
   src: local("Helvetica Neue LT Pro Medium Condensed"),
     url(./fonts/HelveticaNeueLTProMdCn.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro 75 Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 75 Bold"), url(./fonts/HelveticaNeueLTProBd.otf);
+}
+
+.mobiledropdownbold{
+font-family: "Helvetica Neue LT Pro 75 Bold" ;
+color:white;
+font-size: 16px;
+}
+
+.dropdownbox{
+  background: #2E2E2E;
+border: 0.5px solid #FFFFFF;
+box-sizing: border-box;
 }
 .newslettertext {
   font-family: "Helvetica Neue LT Pro Medium Condensed";
