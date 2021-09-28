@@ -1,203 +1,305 @@
 /*Nav Bar Things*/
 
-.logo{
-    max-height: 80px;
-}
-.navtext{
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-}
-.zaranav{
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.bi {
+  color: black;
 }
 
-@media(max-width:576px){
-    .mobilegoaway{
+.logo {
+  max-height: 80px;
+}
+@media (max-width: 576px){
+  .logo{
+    max-height: 50px;
+  }
+}
+
+.navtext {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+}
+.zaranav {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 576px) {
+  .mobilegoaway {
     display: none;
-    }}
- 
+  }
+}
+
+@media (min-width: 576px) {
+  .mobileonly {
+    display: none;
+  }
+}
+
+
 /*Home Page Things*/
 
-.nopadding{
-    padding-left: 0%;
-    padding-right: 0%;
-}
 
-.imagebehindtext{
-position: relative;
+  
+@media (min-width: 576px) {
+.nopadding {
+  padding-left: 0%;
+  padding-right: 0%;
+}}
+
+.imagebehindtext {
+  position: relative;
 }
 
 .top-left {
-    position: absolute;
-    top: -16px;
-    left: 20px;
-      }
+  position: absolute;
+  top: -16px;
+  left: 20px;
+}
 
 @font-face {
-    font-family: 'Gallient Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gallient Regular'), url(./fonts/gallientregular.ttf)
-        }
-    
-    .galnumber{
-        font-family:'Gallient Regular';
-        color: white;
-        font-size: 72px;
-        font-style: normal;
-    }
-    .galhome{
-        font-family:'Gallient Regular';
-        color: black;
-        font-size: 96px;
-        font-style: normal;
-    }
-
-    .galhome2{
-        font-family:'Gallient Regular';
-        color: black;
-        font-size: 20px;
-        font-style: normal;
-    }
-@font-face {
-    font-family: 'The Seasons Bold';
-    font-style: normal;
-    src: local('The Seasons Bold'), url(./fonts/TheSeasons-Bd.otf);
+  font-family: "Gallient Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gallient Regular"), url(./fonts/gallientregular.ttf);
 }
-.overlaytitle{
-    font-family: 'The Seasons Bold';
-    color: white;
-    font-size: 36px;
+
+.galnumber {
+  font-family: "Gallient Regular";
+  color: white;
+  font-size: 72px;
+  font-style: normal;
+}
+.galhome {
+  font-family: "Gallient Regular";
+  color: black;
+  font-size: 96px;
+  font-style: normal;
+}
+
+.galhome2 {
+  font-family: "Gallient Regular";
+  color: black;
+  font-size: 20px;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Helvetica Neue LT Pro 45 Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Neue LT Pro 45 Light'), url(./fonts/HelveticaNeueLTProLt.woff) format('woff');
-    }
-    
-.overlaysubtitle{
-    font-family:'Helvetica Neue LT Pro 45 Light';
-    color: white;
-    font-size: 24px;
+  font-family: "The Seasons Bold";
+  font-style: normal;
+  src: local("The Seasons Bold"), url(./fonts/TheSeasons-Bd.otf);
+}
+.overlaytitle {
+  font-family: "The Seasons Bold";
+  color: white;
+  font-size: 36px;
 }
 @font-face {
-    font-family: 'Helvetica Neue LT Pro Medium Condensed';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Neue LT Pro Medium Condensed'), url(./fonts/HelveticaNeueLTProMdCn.woff) format('woff');
-}
-.newslettertext{
-    font-family:'Helvetica Neue LT Pro Medium Condensed';
-    color: black;
-    font-size: 22px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 45 Light"),
+    url(./fonts/HelveticaNeueLTProLt.woff) format("woff");
 }
 
-    .homeimagecontainer{
-        position: relative;
-    }
-
-    .homeimage{
-        display: block;
-        width: 100%;
-    }
-
-    .homepageimageoverlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #434343BF;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        opacity: 0;
-        transition: opacity 0.25s
-    }
-
-    .homepageimageoverlay:hover{
-        opacity: 1;
-    }
-.newsletter{
-position: absolute;
-height: 148px;
-width: 510px;
-left: 55%;
-right: 0%;
-top: 100%;
-bottom: 0%;
-background: #FFFFFF;
-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+.overlaysubtitle {
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  color: white;
+  font-size: 24px;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Pro Medium Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro Medium Condensed"),
+    url(./fonts/HelveticaNeueLTProMdCn.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Helvetica Neue LT Pro 75 Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 75 Bold"), url(./fonts/HelveticaNeueLTProBd.otf);
+}
+
+.mobiledropdownbold{
+font-family: "Helvetica Neue LT Pro 75 Bold" ;
+color:white;
+font-size: 16px;
+}
+
+.dropdownbox{
+  background: #2E2E2E;
+border: 0.5px solid #FFFFFF;
+box-sizing: border-box;
+}
+.newslettertext {
+  font-family: "Helvetica Neue LT Pro Medium Condensed";
+  color: black;
+  font-size: 22px;
+}
+
+.homeimagecontainer {
+  position: relative;
+}
+
+.homeimage {
+  display: block;
+  width: 100%;
+}
+
+.homepageimageoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #434343bf;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.homepageimageoverlay:hover {
+  opacity: 1;
+}
+.newsletter {
+  position: absolute;
+  height: 160px;
+  width: 550px;
+  left: 58%;
+  right: 0%;
+  top: 105%;
+  bottom: 0%;
+  background: #ffffff;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mb-md-6 {
+  margin-bottom: 4rem !important;
+}
+.mb-md-7 {
+  margin-bottom: 5rem !important;
+}
+
+.mt-md-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-md-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-md-8 {
+  margin-top: 6rem !important;
+}
+.mt-md-9 {
+  margin-top: 7rem !important;
+}
+
+/*footer things*/
+
+.zarafooter {
+  background: #ffffff;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.footerlist li {
+  display: inline;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.footertext {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
 /*Form CSS copied from template, for email imput on home page*/
 .form-group {
-    margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+}
 
-    .form-control {
-        display: block;
-        width: 100%;
-        height: calc(1.5em + 1.75rem + 2px);
-        padding: 0.875rem 1.5rem;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #111;
-        background-color: #fff;
-        background-clip: padding-box;
-        border: 1px solid #e5e5e5;
-        border-radius: 0;
-        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-        @media (prefers-reduced-motion: reduce) {
-          .form-control {
-            transition: none; } }
-        .form-control::-ms-expand {
-          background-color: transparent;
-          border: 0; }
-        .form-control:-moz-focusring {
-          color: transparent;
-          text-shadow: 0 0 0 #111; }
-        .form-control:focus {
-          color: #111;
-          background-color: #fff;
-          border-color: #1f1f1f;
-          outline: 0;
-          box-shadow: none; }
-        .form-control::-webkit-input-placeholder {
-          color: #767676;
-          opacity: 1; }
-        .form-control::-moz-placeholder {
-          color: #767676;
-          opacity: 1; }
-        .form-control:-ms-input-placeholder {
-          color: #767676;
-          opacity: 1; }
-        .form-control::-ms-input-placeholder {
-          color: #767676;
-          opacity: 1; }
-        .form-control::placeholder {
-          color: #767676;
-          opacity: 1; }
-        .form-control:disabled, .form-control[readonly] {
-          background-color: #d8d8d8;
-          opacity: 1; }
-      
-      select.form-control:focus::-ms-value {
-        color: #111;
-        background-color: #fff; }
-      
-      .form-control-file,
-      .form-control-range {
-        display: block;
-        width: 100%; }
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.75rem + 2px);
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #111;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #111;
+}
+.form-control:focus {
+  color: #111;
+  background-color: #fff;
+  border-color: #1f1f1f;
+  outline: 0;
+  box-shadow: none;
+}
+.form-control::-webkit-input-placeholder {
+  color: #767676;
+  opacity: 1;
+}
+.form-control::-moz-placeholder {
+  color: #767676;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #767676;
+  opacity: 1;
+}
+.form-control::-ms-input-placeholder {
+  color: #767676;
+  opacity: 1;
+}
+.form-control::placeholder {
+  color: #767676;
+  opacity: 1;
+}
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #d8d8d8;
+  opacity: 1;
+}
 
-        .form-control-sm {
-            height: calc(1.5em + 1.625rem + 2px);
-            padding: 0.8125rem 1.25rem;
-            font-size: 0.9375rem;
-            line-height: 1.5; }
+select.form-control:focus::-ms-value {
+  color: #111;
+  background-color: #fff;
+}
+
+.form-control-file,
+.form-control-range {
+  display: block;
+  width: 100%;
+}
+
+.form-control-sm {
+  height: calc(1.5em + 1.625rem + 2px);
+  padding: 0.8125rem 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
