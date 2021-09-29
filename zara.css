@@ -1,3 +1,41 @@
+/*overall layout assistance*/
+
+html, body {
+  overflow-x: hidden;
+}
+
+.offsetright-1{
+  margin-right: 8.33333333%;
+}
+.offsetright-2{
+margin-right: 16.66666667%;
+}
+
+.offsetright-md-0{
+  margin-right:0%
+}
+
+.mb-md-6 {
+  margin-bottom: 4rem !important;
+}
+.mb-md-7 {
+  margin-bottom: 5rem !important;
+}
+
+.mt-md-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-md-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-md-8 {
+  margin-top: 6rem !important;
+}
+.mt-md-9 {
+  margin-top: 7rem !important;
+}
 /*Nav Bar Things*/
 
 .bi {
@@ -40,8 +78,6 @@
 
 /*Home Page Things*/
 
-
-  
 @media (min-width: 576px) {
 .nopadding {
   padding-left: 0%;
@@ -71,12 +107,20 @@
   font-size: 72px;
   font-style: normal;
 }
+
+
+
 .galhome {
   font-family: "Gallient Regular";
   color: black;
   font-size: 96px;
   font-style: normal;
 }
+
+@media (max-width: 768px){
+  .galhome{
+    font-size: 72px;
+  }}
 
 .galhome2 {
   font-family: "Gallient Regular";
@@ -170,41 +214,61 @@ box-sizing: border-box;
   position: absolute;
   height: 160px;
   width: 550px;
-  left: 58%;
+  left: 55%;
   right: 0%;
-  top: 105%;
+  top: 85%;
   bottom: 0%;
   background: #ffffff;
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
 }
+/*Mobile Home Page Things*/
 
-.mb-md-6 {
-  margin-bottom: 4rem !important;
+.mobilebox1{
+width: 280px;
+height: 65px;
+left: 1px;
+top: 406px;
+background: linear-gradient(92.04deg, #A38E7B 4.16%, #E2CDB9 99.68%);
+z-index: 10;
 }
-.mb-md-7 {
-  margin-bottom: 5rem !important;
+.mobilebox2{
+width: 308px;
+height: 65px;
+left: 67px;
+top: 1025px;
+background: linear-gradient(272.39deg, #BAD1D9 0.03%, #4E91AC 99.48%);
+}
+.mobilebox3{
+width: 264px;
+height: 65px;
+left: 1px;
+top: 1837px;
+background: linear-gradient(92.43deg, #839293 15.56%, #C9DDDE 99.56%);
+}
+.mobilebox4{
+width: 308px;
+height: 65px;
+left: 67px;
+top: 2364px;
+background: linear-gradient(92.14deg, #969A8D 0%, #31402B 95.23%);
 }
 
-.mt-md-6 {
-  margin-top: 4rem !important;
+.mobilboxtext{
+  font-family: "The Seasons Bold";
+  color: white;
+  font-size: 24px;
 }
-
-.mt-md-7 {
-  margin-top: 5rem !important;
-}
-
-.mt-md-8 {
-  margin-top: 6rem !important;
-}
-.mt-md-9 {
-  margin-top: 7rem !important;
+.mobileboxtext2{
+  font-family: "Helvetica Neue LT Pro Medium Condensed";
+  color: white;
+  font-size: 18px;
 }
 
 /*footer things*/
 
 .zarafooter {
   background: #ffffff;
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
   z-index: 10;
 }
 
