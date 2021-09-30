@@ -177,7 +177,9 @@ font-size: 16px;
 }
 
 .dropdownbox{
-  background: #2E2E2E;
+  text-align:left;
+height: 44px;
+background: #2E2E2E;
 border: 0.5px solid #FFFFFF;
 box-sizing: border-box;
 }
