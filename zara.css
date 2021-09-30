@@ -1,6 +1,8 @@
 /*overall layout assistance*/
 
-html, body {
+
+/*this makes our pages not have a horizontal scroll on mobile, pls do not remove*/
+.nohorizontalscroll { 
   overflow-x: hidden;
 }
 
@@ -60,6 +62,13 @@ margin-right: 16.66666667%;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 18px;
+  font-weight: 500;
+}
+.navtexttop {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 14px;
   font-weight: 500;
 }
 .zaranav {
@@ -169,11 +178,27 @@ margin-right: 16.66666667%;
   font-weight: normal;
   src: local("Helvetica Neue LT Pro 75 Bold"), url(./fonts/HelveticaNeueLTProBd.otf);
 }
+@font-face {
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 55 Roman"), url(./fonts/HelveticaNeueLTProRoman.otf);
+}
+
+
+.mobiledropdown{
+  font-family: "Helvetica Neue LT Pro 55 Roman" ;
+  color:white;
+  font-size: 16px;
+  padding-left: 3rem !important;
+padding-top: 1rem !important;
+  }
 
 .mobiledropdownbold{
 font-family: "Helvetica Neue LT Pro 75 Bold" ;
 color:white;
-font-size: 16px;
+font-size: 18px;
+
 }
 
 .dropdownbox{
@@ -182,6 +207,7 @@ height: 44px;
 background: #2E2E2E;
 border: 0.5px solid #FFFFFF;
 box-sizing: border-box;
+margin-top: 0% !important;
 }
 .newslettertext {
   font-family: "Helvetica Neue LT Pro Medium Condensed";

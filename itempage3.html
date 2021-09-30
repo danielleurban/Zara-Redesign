@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicons -->
-    <link rel="icon" href="./assets/img/favicons/favicon.ico">
+    <link rel="icon" href="./images/logo.png">
 
 
     <!-- Libs CSS -->
@@ -40,6 +40,191 @@
 
   <body>
 
+    <!--MOBILE NAV BAR-->
+
+    <nav class=" navbar navbar-expand navbar-light mobileonly ">
+      <div class="zaranav container">
+
+        <!-- Brand -->
+        <a class="px-4 pb-4" href="index.html"> <img class="img-fluid logo" src="./images/logo.png"></a>
+
+        <!-- Nav -->
+        <ul class="navbar-nav  d-md-flex ml-auto">
+          <li class="nav-item">
+            <a class="nav-link pb-2" data-toggle="modal" href="#modalSearch">
+              <i class="fe fe-search"></i>
+            </a>
+          </li>
+          <li class="nav-item pb-2 ml-lg-n4">
+            <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+              <i class="fe fe-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler d-block px-4 pb-4" type="button" data-toggle="modal" data-target="#modalSidebar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="modal fixed-right fade" id="modalSidebar" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-vertical" role="document">
+            <div class="modal-content">
+
+              <!-- Close -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-x" aria-hidden="true"></i>
+              </button>
+
+              <!-- Body -->
+              <div class="modal-body my-auto">
+
+                <!-- Nav -->
+                <ul class="nav nav-vertical nav-unstyled font-size-h2" id="sidebarNav">
+                  <li class="nav-item">
+
+                    <!-- Toggle -->
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarHome">
+                      COLLECTIONS
+                    </a>
+
+                    <!-- Toggle -->
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      WOMEN
+                    </a>
+
+                    <!-- Collapse -->
+                    <div class="collapse" id="sidebarCatalog" data-parent="#sidebarNav">
+                      <div class="row">
+                        <div class="col-12 py-3">
+
+                          <!-- Heading -->
+                          <div class="dropdownbox">
+                            <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">New!
+                            </h6>
+                          </div>
+                          <div class="dropdownbox">
+                            <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">Best Sellers</h6>
+                          </div>
+                          <div class="dropdownbox">
+                            <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">Collections</h6>
+                          </div>
+                          <div class="dropdownbox">
+                            <div class="mobiledropdownbold px-2 pt-4 dropdown-toggle">Shop by Category
+                            </div>
+                          </div>
+
+                          <!-- Links -->
+                          <ul class="list-styled font-size-lg">
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Tops</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">T-Shirts</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Shirts</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Knitwear</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Jackets/Blazers</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Skirts/Shorts</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Dresses/Jumpsuits</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Jumpers & Cardigans</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Hoodies/Sweatshirts</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Coats/Trenches</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Sets</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Jeans</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Suits</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Lingerie</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Bags</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Shoes</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Accessories</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      MEN
+                    </a>
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      KIDS
+                    </a>
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      BEAUTY
+                    </a>
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      ABOUT
+                    </a>
+
+
+
+
+              </div>
+
+              <!-- Body -->
+              <div class="moda-body px-10 py-9">
+
+                <!-- Social links -->
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-pinterest-p"></i>
+                    </a>
+                  </li>
+                </ul>
+                </ul>
+              </div>
+    </nav>
+
+
     <nav class="navbar nav-unstyled navbar-expand-md navbar-default d-block mobilegoaway">
       <!--Top Nav Bar-->
       <nav class="zaranav mb-2 mobilegoaway">
@@ -49,19 +234,27 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
             </div>
           </div>
-          <div class=" col-md-3 offset-md-4 offsetright-md-1 justify-content-end">
-            <ul class="navbar-nav me-auto mb-5 mb-md-0">
+          <div class="col-md-4 offset-md-3 offsetright-md-1 justify-content-end">
+            <ul class="navbar-nav d-none d-md-flex ml-auto">
               <li class="nav-item">
-                <a class="icon nav-link active" aria-current="page" target="_blank"><i class="bi bi-search"></i></a>
+                <a class="nav-link" data-toggle="modal" href="#modalSearch">
+                  <i class="fe fe-search px-2"></i>
+                </a>
               </li>
-              <li class="nav-item">
-                <a class=" icon nav-link active navtext" aria-current="page" href="">LOGIN</a>
+              <li class="nav-item ml-lg-n4">
+                <a class="nav-link" href="./account-orders.html">
+                  <i class="fe fe-user px-2"><span class="px-2 mb-2 navtexttop">LOGIN</span></i>
+                </a>
               </li>
-              <li class="nav-item">
-                <a class=" icon nav-link active navtext" aria-current="page" href="">HELP</a>
+              <li class="nav-item ml-lg-n4">
+                <a class="nav-link" href="./account-wishlist.html">
+                  <i class="fe fe-heart px-2"><span class="px-2 navtexttop">SAVED</span></i>
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="icon nav-link active navtext" href="">CART</a>
+              <li class="nav-item ml-lg-n4">
+                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+                  <i class="fe fe-shopping-cart"><span class="px-2 navtexttop">CART</span></i>
+                </a>
               </li>
             </ul>
             <form class="d-block">
@@ -74,23 +267,23 @@
 
 
       <!--Second Nav Bar-->
-      <nav class="zaranav mobilegoaway">
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mx-auto me-auto mb-5 mb-md-0 col-md-10 offset-md-2 text-center">
+      <nav class="zaranav zaradropdown mobilegoaway">
+        <div class="container zaradropdown">
+          <div class=" zaradropdown collapse navbar-collapse" id="navbarCollapse">
+            <ul class=" zaradropdown navbar-nav mx-auto me-auto mb-5 mb-md-0 col-md-10 offset-md-2 text-center">
               <!--Collections Drop Down-->
-              <li class="nav-item dropdown position-static hovered">
+              <li class="nav-item dropdown zaradropdown position-static hovered">
                 <a class="nav-link active navtext px-4 ps-5 ms-5" aria-current="page" data-toggle="dropdown" href="#"
                   aria-expanded="true">COLLECTIONS</a>
               </li>
 
               <!--Women Dropdown Section-->
 
-              <li class="nav-item dropdown position-static hovered">
-                <a class=" nav-link active navtext px-4" aria-current="page" data-toggle="dropdown" href="#"
+              <li class="nav-item dropdown zaradropdown position-static hovered">
+                <a class="nav-link active navtext px-4" aria-current="page" data-toggle="dropdown" href="#"
                   aria-expanded="true">WOMEN</a>
                 <!-- Menu -->
-                <div class="dropdown-menu w-100">
+                <div class="dropdown-menu w-100 mobilegoaway">
 
                   <!-- Tabs -->
                   <form class="mb-2 mb-lg-0 border-bottom-lg">
@@ -214,12 +407,6 @@
 
           </li>
 
-          <!--Men Dropdown Section-->
-
-          <li class="nav-item dropdown position-static hovered">
-            <a class=" nav-link active navtext px-4" aria-current="page" data-toggle="dropdown" href="#"
-              aria-expanded="true">MEN</a>
-          </li>
 
           <li class="nav-item">
             <a class="icon nav-link active navtext px-4" href="">KIDS</a>
@@ -239,508 +426,6 @@
       </nav>
     </nav>
 
-    <!--MOBILE NAV BAR-->
-
-    <nav class="zaranav navbar navbar-expand navbar-light">
-      <div class="zaranav container">
-
-        <!-- Brand -->
-        <a class="px-4 pb-4" href="index.html"> <img class="img-fluid logo" src="./images/logo.png"></a>
-
-        <!-- Nav -->
-        <ul class="navbar-nav d-none d-md-flex ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" href="#modalSearch">
-              <i class="fe fe-search"></i>
-            </a>
-          </li>
-          <li class="nav-item ml-lg-n4">
-            <a class="nav-link" href="./account-orders.html">
-              <i class="fe fe-user"></i>
-            </a>
-          </li>
-          <li class="nav-item ml-lg-n4">
-            <a class="nav-link" href="./account-wishlist.html">
-              <i class="fe fe-heart"></i>
-            </a>
-          </li>
-          <li class="nav-item ml-lg-n4">
-            <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
-              <span data-cart-items="2">
-                <i class="fe fe-shopping-cart"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-
-        <!-- Toggler -->
-        <button class="navbar-toggler d-block ml-7 px-4 pb-4" type="button" data-toggle="modal"
-          data-target="#modalSidebar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="modal fixed-right fade" id="modalSidebar" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-vertical" role="document">
-            <div class="modal-content">
-
-              <!-- Close -->
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <i class="fe fe-x" aria-hidden="true"></i>
-              </button>
-
-              <!-- Body -->
-              <div class="modal-body px-10 my-auto">
-
-                <!-- Nav -->
-                <ul class="nav nav-vertical nav-unstyled font-size-h2" id="sidebarNav">
-                  <li class="nav-item">
-
-                    <!-- Toggle -->
-                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarHome">
-                      COLLECTIONS
-                    </a>
-
-                    <!-- Collapse -->
-                    <div class="collapse" id="sidebarHome" data-parent="#sidebarNav">
-                      <ul class="list-styled font-size-lg py-3 mb-0">
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./index.html">Default</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./index-classic.html">Classic</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./index-fashion.html">Fashion</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./index-boxed.html">Boxed</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./index-simple.html">Simple</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./index-asymmetric.html">Asymmetric</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./index-sidenav.html">Sidenav</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./index-landing.html">Landing</a>
-                        </li>
-                      </ul>
-                    </div>
-
-                  </li>
-                  <li class="nav-item">
-
-                    <!-- Toggle -->
-                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
-                      WOMEN
-                    </a>
-
-                    <!-- Collapse -->
-                    <div class="collapse" id="sidebarCatalog" data-parent="#sidebarNav">
-                      <div class="row">
-                        <div class="col-12 py-3">
-
-                          <!-- Heading -->
-                          <div class="dropdownbox">
-                            <h6 class="mobiledropdownbold px-2 pt-4">New!
-                            </h6>
-                          </div>
-                          <div class="dropdownbox">
-                            <h6 class="mobiledropdownbold px-2 pt-4">Best Sellers</h6>
-                          </div>
-                          <div class="dropdownbox">
-                            <h6 class="mobiledropdownbold px-2 pt-4">Collections</h6>
-                          </div>
-                          <div class="dropdownbox">
-                            <div class="mobiledropdownbold px-2 pt-4">Shop by Category
-                            </div>
-                          </div>
-
-                          <!-- Links -->
-                          <ul class="list-styled font-size-lg py-3">
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">All Clothing</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Blouses & Shirts</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Coats & Jackets</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Dresses</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Hoodies & Sweats</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Denim</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Jeans</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Jumpers & Cardigans</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Leggings</a>
-                            </li>
-                          </ul>
-
-                        </div>
-                        <div class="col-12 py-3">
-
-                          <!-- Heading -->
-                          <h6 class="mb-5 font-weight-bold">Shoes & Boots</h6>
-
-                          <!-- Links -->
-                          <ul class="list-styled font-size-lg">
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">All Shoes & Boots</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Branded Shoes</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Boots</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Heels</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Trainers</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Sandals</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Shoes</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Wide Fit Shoes</a>
-                            </li>
-                          </ul>
-
-                        </div>
-                        <div class="col-12 py-3">
-
-                          <!-- Heading -->
-                          <h6 class="mb-5 font-weight-bold">Bags & Accessories</h6>
-
-                          <!-- Links -->
-                          <ul class="list-styled font-size-lg">
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">All Bags & Accessories</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Accessories</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Bags & Purses</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Luggage</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Belts</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Hats</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Hair Accessories</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Jewellery</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Travel Accessories</a>
-                            </li>
-                          </ul>
-
-                        </div>
-                      </div>
-                    </div>
-
-                  </li>
-                  <li class="nav-item">
-
-                    <!-- Toggle -->
-                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarShop">
-                      MEN
-                    </a>
-
-                    <!-- Collapse -->
-                    <div class="collapse" id="sidebarShop" data-parent="#sidebarNav">
-                      <div class="row">
-                        <div class="col-12 py-3">
-
-                          <!-- Heading -->
-                          <h6 class="mb-5">Shop</h6>
-
-                          <!-- Links -->
-                          <ul class="list-styled font-size-lg">
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop.html">Default</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop-topbar.html">Topbar</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop-collapse.html">Collapse</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop-simple.html">Simple</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shop-masonry.html">Masonry</a>
-                            </li>
-                          </ul>
-
-                        </div>
-                        <div class="col-12 py-3">
-
-                          <!-- Heading -->
-                          <h6 class="mb-5">Product</h6>
-
-                          <!-- Links -->
-                          <ul class="list-styled font-size-lg">
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./product.html">Default</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./product-images-left.html">Images Left</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./product-image-grid.html">Image Grid</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./product-image-slider.html">Image Slider</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./product-images-stacked.html">Images Stacked</a>
-                            </li>
-                          </ul>
-
-                        </div>
-                        <div class="col-12 py-3">
-
-                          <!-- Heading -->
-                          <h6 class="mb-5">Support</h6>
-
-                          <!-- Links -->
-                          <ul class="list-styled font-size-lg">
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shopping-cart.html">Shopping Cart</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./checkout.html">Checkout</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./order-completed.html">Order Completed</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./shipping-and-returns.html">Shipping & Returns</a>
-                            </li>
-                          </ul>
-
-                        </div>
-                        <div class="col-12 py-3">
-
-                          <!-- Heading -->
-                          <h6 class="mb-5">Account</h6>
-
-                          <!-- Links -->
-                          <ul class="list-styled font-size-lg">
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-order.html">Order</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-orders.html">Orders</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-wishlist.html">Wishlist</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-personal-info.html">Personal Info</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-address.html">Addresses</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-address-edit.html">Addresses: New</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-payment.html">Payment</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-payment-edit.html">Payment: New</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./account-payment-choose.html">Payment: Choose</a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" href="./auth.html">Auth</a>
-                            </li>
-                          </ul>
-
-                        </div>
-                        <div class="col-12 py-3">
-
-                          <!-- Heading -->
-                          <h6 class="mb-5">Modals</h6>
-
-                          <!-- Links -->
-                          <ul class="list-styled font-size-lg">
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" data-toggle="modal" href="#modalNewsletterHorizontal">
-                                Newsletter: Horizontal
-                              </a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" data-toggle="modal" href="#modalNewsletterVertical">
-                                Newsletter: Vertical
-                              </a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" data-toggle="modal" href="#modalProduct">
-                                Product
-                              </a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" data-toggle="modal" href="#modalSearch">
-                                Search
-                              </a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" data-toggle="modal" href="#modalShoppingCart">
-                                Shopping Cart
-                              </a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" data-toggle="modal" href="#modalSizeChart">
-                                Size Chart
-                              </a>
-                            </li>
-                            <li class="list-styled-item">
-                              <a class="list-styled-link" data-toggle="modal" href="#modalWaitList">
-                                Wait List
-                              </a>
-                            </li>
-                          </ul>
-
-                        </div>
-                      </div>
-                    </div>
-
-                  </li>
-                  <li class="nav-item">
-
-                    <!-- Toggle -->
-                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarPages">
-                      KIDS
-                    </a>
-
-                    <!-- Collapse -->
-                    <div class="collapse" id="sidebarPages" data-parent="#sidebarNav">
-                      <ul class="list-styled font-size-lg py-3 mb-0">
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./about.html">About</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./contact-us.html">Contact Us</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./store-locator.html">Store Locator</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./faq.html">FAQ</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./coming-soon.html">Coming Soon</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./404.html">404</a>
-                        </li>
-                      </ul>
-                    </div>
-
-                  </li>
-                  <li class="nav-item">
-
-                    <!-- Toggle -->
-                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarBlog">
-                      BEAUTY
-                    </a>
-
-                    <!-- Collapse -->
-                    <div class="collapse" id="sidebarBlog" data-parent="#sidebarNav">
-                      <ul class="list-styled font-size-lg py-3 mb-0">
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./blog-post.html">Blog Post</a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <!-- Toggle -->
-                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarBlog">
-                      ABOUT
-                    </a>
-
-                    <!-- Collapse -->
-                    <div class="collapse" id="sidebarBlog" data-parent="#sidebarNav">
-                      <ul class="list-styled font-size-lg py-3 mb-0">
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="list-styled-item">
-                          <a class="list-styled-link" href="./blog-post.html">Blog Post</a>
-                        </li>
-                      </ul>
-                    </div>
-                </ul>
-
-              </div>
-
-              <!-- Body -->
-              <div class="moda-body px-10 py-9">
-
-                <!-- Social links -->
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <a class="text-gray-350" href="#!">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-gray-350" href="#!">
-                      <i class="fab fa-youtube"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-gray-350" href="#!">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-gray-350" href="#!">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-gray-350" href="#!">
-                      <i class="fab fa-medium-m"></i>
-                    </a>
-                  </li>
-                </ul>
-
-              </div>
-    </nav>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
