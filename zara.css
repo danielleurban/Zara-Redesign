@@ -198,9 +198,13 @@ padding-top: 1rem !important;
 font-family: "Helvetica Neue LT Pro 75 Bold" ;
 color:white;
 font-size: 18px;
-
 }
 
+.dropdowntext{
+  font-family: "Helvetica Neue LT Pro 55 Roman" ;
+  color:black;
+  font-size: 16px;
+}
 .dropdownbox{
   text-align:left;
 height: 44px;
