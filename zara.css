@@ -188,8 +188,11 @@ margin-right: 16.66666667%;
   font-weight: normal;
   src: local("Helvetica Neue LT Pro 55 Roman"), url(./fonts/HelveticaNeueLTProRoman.otf);
 }
-
-
+.blazertext {
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-size: 14px;
+  color: black;
+}
 .mobiledropdown{
   font-family: "Helvetica Neue LT Pro 55 Roman" ;
   color:white;
