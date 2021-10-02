@@ -2260,7 +2260,8 @@ input[type="button"].btn-block {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #e5e5e5; }
+  border: 1px solid #e5e5e5;
+  overflow:visible; }
 
 .dropdown-menu-left {
   right: auto;

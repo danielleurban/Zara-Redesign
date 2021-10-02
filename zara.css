@@ -1,3 +1,47 @@
+/*overall layout assistance*/
+
+
+/*this makes our pages not have a horizontal scroll on mobile, pls do not remove*/
+.nohorizontalscroll { 
+  overflow-x: hidden;
+}
+
+.offsetright-1{
+  margin-right: 8.33333333%;
+}
+.offsetright-2{
+margin-right: 16.66666667%;
+}
+
+.offsetright-md-0{
+  margin-right:0%
+}
+
+.offsetright-md-1{
+  margin-right:8.33333333%;
+}
+
+.mb-md-6 {
+  margin-bottom: 4rem !important;
+}
+.mb-md-7 {
+  margin-bottom: 5rem !important;
+}
+
+.mt-md-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-md-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-md-8 {
+  margin-top: 6rem !important;
+}
+.mt-md-9 {
+  margin-top: 7rem !important;
+}
 /*Nav Bar Things*/
 
 .bi {
@@ -20,28 +64,37 @@
   font-size: 18px;
   font-weight: 500;
 }
+.navtexttop {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+}
 .zaranav {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .mobilegoaway {
     display: none;
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .mobileonly {
     display: none;
   }
 }
 
+.line{
+  border-right: 1px black;
+  height: 268px;
+}
 
 /*Home Page Things*/
 
-
-  
 @media (min-width: 576px) {
 .nopadding {
   padding-left: 0%;
@@ -71,12 +124,20 @@
   font-size: 72px;
   font-style: normal;
 }
+
+
+
 .galhome {
   font-family: "Gallient Regular";
   color: black;
   font-size: 96px;
   font-style: normal;
 }
+
+@media (max-width: 768px){
+  .galhome{
+    font-size: 72px;
+  }}
 
 .galhome2 {
   font-family: "Gallient Regular";
@@ -121,23 +182,62 @@
   font-weight: normal;
   src: local("Helvetica Neue LT Pro 75 Bold"), url(./fonts/HelveticaNeueLTProBd.otf);
 }
+@font-face {
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 55 Roman"), url(./fonts/HelveticaNeueLTProRoman.otf);
+}
+
+
+.mobiledropdown{
+  font-family: "Helvetica Neue LT Pro 55 Roman" ;
+  color:white;
+  font-size: 16px;
+  padding-left: 3rem !important;
+padding-top: 1rem !important;
+  }
 
 .mobiledropdownbold{
 font-family: "Helvetica Neue LT Pro 75 Bold" ;
 color:white;
-font-size: 16px;
+font-size: 18px;
 }
 
+.dropdowntext{
+  font-family: "Helvetica Neue LT Pro 55 Roman" ;
+  color:black;
+  font-size: 16px;
+}
 .dropdownbox{
-  background: #2E2E2E;
-border: 0.5px solid #FFFFFF;
+  text-align:left;
+height: 44px;
+background: #2E2E2E;
+
 box-sizing: border-box;
+margin-top: 0% !important;
 }
 .newslettertext {
   font-family: "Helvetica Neue LT Pro Medium Condensed";
   color: black;
   font-size: 22px;
 }
+
+@media (min-width: 768px) {
+  .newslettertextmobile{
+    font-family: "Helvetica Neue LT Pro Medium Condensed";
+    color: black;
+    font-size: 22px;
+    text-align: left !important;
+  }
+}
+
+.newslettertextmobile{
+  font-family: "Helvetica Neue LT Pro Medium Condensed";
+  color: black;
+  font-size: 18px;
+}
+
 
 .homeimagecontainer {
   position: relative;
@@ -170,41 +270,70 @@ box-sizing: border-box;
   position: absolute;
   height: 160px;
   width: 550px;
-  left: 58%;
+  left: 55%;
   right: 0%;
-  top: 105%;
+  top: 85%;
   bottom: 0%;
   background: #ffffff;
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.mb-md-6 {
-  margin-bottom: 4rem !important;
-}
-.mb-md-7 {
-  margin-bottom: 5rem !important;
+/*Mobile Home Page Things*/
+.mobilebox1{
+  position: absolute;
+  z-index: 100;
+  width: 308px;
+  height: 65px;
+  top: 405px;
+  background: linear-gradient(272.39deg, #BAD1D9 0.03%, #4E91AC 99.48%);
+  }
+
+.mobilebox2{
+position: absolute;
+z-index: 100;
+width: 308px;
+height: 65px;
+left: 66px;
+top: 315px;
+background: linear-gradient(272.39deg, #B9BAB2 0.03%, #69503C 99.48%);
 }
 
-.mt-md-6 {
-  margin-top: 4rem !important;
+.mobilebox3{
+position: absolute;
+z-index: 100;
+width: 280px;
+height: 65px;
+top: 1950px;
+left: 0px;
+background: linear-gradient(92.43deg, #839293 15.56%, #C9DDDE 99.56%);
 }
 
-.mt-md-7 {
-  margin-top: 5rem !important;
+.mobilebox4{
+position: absolute;
+z-index: 100;
+width: 308px;
+height: 65px;
+left: 67px;
+top: 2434px;
+background: linear-gradient(92.14deg, #969A8D 0%, #31402B 95.23%);
 }
 
-.mt-md-8 {
-  margin-top: 6rem !important;
+.mobilboxtext{
+  font-family: "The Seasons Bold";
+  color: white;
+  font-size: 24px;
 }
-.mt-md-9 {
-  margin-top: 7rem !important;
+.mobileboxtext2{
+  font-family: "Helvetica Neue LT Pro Medium Condensed";
+  color: white;
+  font-size: 18px;
 }
 
 /*footer things*/
 
 .zarafooter {
   background: #ffffff;
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
   z-index: 10;
 }
 

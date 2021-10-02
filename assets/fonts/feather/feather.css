@@ -382,6 +382,7 @@
 }
 .fe-heart:before {
   content: "\e977";
+  font-size: large;
 }
 .fe-help-circle:before {
   content: "\e978";
@@ -604,6 +605,7 @@
 }
 .fe-search:before {
   content: "\e9c1";
+  font-size: large;
 }
 .fe-send:before {
   content: "\e9c2";
@@ -631,6 +633,7 @@
 }
 .fe-shopping-cart:before {
   content: "\e9ca";
+  font-size: large;
 }
 .fe-shuffle:before {
   content: "\e9cb";
@@ -748,6 +751,7 @@
 }
 .fe-user:before {
   content: "\e9f1";
+  font-size:large ;
 }
 .fe-user-check:before {
   content: "\e9f2";
