@@ -53,9 +53,16 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+  @font-face {
+    font-family: "Helvetica Neue LT Pro 55 Roman";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Helvetica Neue LT Pro 55 Roman"), url(./fonts/HelveticaNeueLTProRoman.otf);
+  }
+  
 body {
   margin: 0;
-  font-family: "Jost";
+  font-family: "Helvetica Neue LT Pro 55 Roman";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
