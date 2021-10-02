@@ -88,6 +88,10 @@ margin-right: 16.66666667%;
   }
 }
 
+.line{
+  border-right: 1px black;
+  height: 268px;
+}
 
 /*Home Page Things*/
 
