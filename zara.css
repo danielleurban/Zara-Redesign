@@ -279,35 +279,42 @@ margin-top: 0% !important;
 }
 
 /*Mobile Home Page Things*/
-
 .mobilebox1{
-  float: left;
+  position: absolute;
+  z-index: 100;
+  width: 308px;
+  height: 65px;
+  top: 405px;
+  background: linear-gradient(272.39deg, #BAD1D9 0.03%, #4E91AC 99.48%);
+  }
+
+.mobilebox2{
+position: absolute;
+z-index: 100;
+width: 308px;
+height: 65px;
+left: 66px;
+top: 315px;
+background: linear-gradient(272.39deg, #B9BAB2 0.03%, #69503C 99.48%);
+}
+
+.mobilebox3{
+position: absolute;
+z-index: 100;
 width: 280px;
 height: 65px;
-left: 1px;
-top: 406px;
-background: linear-gradient(92.04deg, #A38E7B 4.16%, #E2CDB9 99.68%);
-z-index: 10;
-}
-.mobilebox2{
-width: 308px;
-height: 65px;
-left: 67px;
-top: 1025px;
-background: linear-gradient(272.39deg, #BAD1D9 0.03%, #4E91AC 99.48%);
-}
-.mobilebox3{
-width: 264px;
-height: 65px;
-left: 1px;
-top: 1837px;
+top: 1950px;
+left: 0px;
 background: linear-gradient(92.43deg, #839293 15.56%, #C9DDDE 99.56%);
 }
+
 .mobilebox4{
+position: absolute;
+z-index: 100;
 width: 308px;
 height: 65px;
 left: 67px;
-top: 2364px;
+top: 2434px;
 background: linear-gradient(92.14deg, #969A8D 0%, #31402B 95.23%);
 }
 
