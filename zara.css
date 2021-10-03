@@ -6,6 +6,11 @@
   overflow-x: hidden;
 }
 
+.centerhorizontalincolumn {
+  display: block;
+  margin:auto;
+}
+
 .offsetright-1{
   margin-right: 8.33333333%;
 }
