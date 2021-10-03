@@ -432,3 +432,49 @@ select.form-control:focus::-ms-value {
   font-size: 0.9375rem;
   line-height: 1.5;
 }
+
+/*Cart Page*/
+
+@media (min-width: 768px) {
+.cartheader {
+  font-family: "The Seasons Bold";
+  color:black;
+  font-size: 25px;
+}}
+
+.cartheader {
+  font-family: "The Seasons Bold";
+  color:black;
+  font-size: 64px;
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 65 Medium"), url(./fonts/HelveticaNeueLTProMd.otf);
+}
+
+.ordertext1{
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-size: 24px;
+  color: black;
+  padding-bottom: 0% !important;
+}
+
+.ordertext2{
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-size: 16px;
+  color: black;
+}
+.cartheading{
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-size: 18px;
+  color: black;
+  padding-bottom: 0% !important;
+}
+.checkoutbutton{
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-size: 24px;
+  color: white;
+}

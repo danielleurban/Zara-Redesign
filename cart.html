@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicons -->
+        <link rel="icon" href="./images/logo.png">
+
+
+        <!-- Libs CSS -->
+        <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="./assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+        <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+        <link rel="stylesheet" href="./assets/libs/simplebar/dist/simplebar.min.css">
+        <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+        <link rel="stylesheet" href="./assets/fonts/feather/feather.css">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+        <!--Theme CSS -->
+        <link rel="stylesheet" href="./assets/css/theme.css">
+
+        <!-- ZARA CSS -->
+        <link rel="stylesheet" href="zara.css">
+
+        <title>Zara</title>
+    </head>
+
+    <body>
+
+        <!--MOBILE NAV BAR-->
+
+        <nav class=" navbar navbar-expand navbar-light mobileonly ">
+            <div class="zaranav container">
+
+                <!-- Brand -->
+                <a class="px-4 pb-4" href="index.html"> <img class="img-fluid logo" src="./images/logo.png"></a>
+
+                <!-- Nav -->
+                <ul class="navbar-nav  d-md-flex ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link pb-2" data-toggle="modal" href="#modalSearch">
+                            <i class="fe fe-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item pb-2 ml-lg-n4">
+                        <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+                            <i class="fe fe-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler d-block px-4 pb-4" type="button" data-toggle="modal"
+                    data-target="#modalSidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="modal fixed-right fade" id="modalSidebar" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-vertical" role="document">
+                        <div class="modal-content">
+
+                            <!-- Close -->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fe fe-x" aria-hidden="true"></i>
+                            </button>
+
+                            <!-- Body -->
+                            <div class="modal-body my-auto">
+
+                                <!-- Nav -->
+                                <ul class="nav nav-vertical nav-unstyled font-size-h2" id="sidebarNav">
+                                    <li class="nav-item">
+
+                                        <!-- Toggle -->
+                                        <a class="nav-link dropdown-toggle navtext" data-toggle="collapse"
+                                            href="#sidebarHome">
+                                            COLLECTIONS
+                                        </a>
+
+                                        <!-- Toggle -->
+                                        <a class="nav-link dropdown-toggle navtext" data-toggle="collapse"
+                                            href="#sidebarCatalog">
+                                            WOMEN
+                                        </a>
+
+                                        <!-- Collapse -->
+                                        <div class="collapse" id="sidebarCatalog" data-parent="#sidebarNav">
+                                            <div class="row">
+                                                <div class="col-12 py-3">
+
+                                                    <!-- Heading -->
+                                                    <div class="dropdownbox">
+                                                        <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">New!
+                                                        </h6>
+                                                    </div>
+                                                    <div class="dropdownbox">
+                                                        <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">Best
+                                                            Sellers</h6>
+                                                    </div>
+                                                    <div class="dropdownbox">
+                                                        <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">
+                                                            Collections</h6>
+                                                    </div>
+                                                    <div class="dropdownbox">
+                                                        <div class="mobiledropdownbold px-2 pt-4 dropdown-toggle">SHOP
+                                                            BY CATEGORY
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Links -->
+                                                    <ul class="list-styled font-size-lg">
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">Tops</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">T-Shirts</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">Shirts</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">Knitwear</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">Jackets/Blazers</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">Skirts/Shorts</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">Dresses/Jumpsuits</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown" href="./">Jumpers
+                                                                & Cardigans</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">Hoodies/Sweatshirts</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="./">Coats/Trenches</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown" href="">Sets</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown" href="">Jeans</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown" href="">Suits</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="">Lingerie</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown" href="">Bags</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown" href="">Shoes</a>
+                                                        </li>
+                                                        <li class="list-styled-item dropdownbox">
+                                                            <a class="list-styled-link mobiledropdown"
+                                                                href="">Accessories</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a class="nav-link dropdown-toggle navtext" data-toggle="collapse"
+                                            href="#sidebarCatalog">
+                                            MEN
+                                        </a>
+                                        <a class="nav-link dropdown-toggle navtext" data-toggle="collapse"
+                                            href="#sidebarCatalog">
+                                            KIDS
+                                        </a>
+                                        <a class="nav-link dropdown-toggle navtext" data-toggle="collapse"
+                                            href="#sidebarCatalog">
+                                            BEAUTY
+                                        </a>
+                                        <a class="nav-link dropdown-toggle navtext" data-toggle="collapse"
+                                            href="#sidebarCatalog">
+                                            ABOUT
+                                        </a>
+
+
+
+
+                            </div>
+
+                            <!-- Body -->
+                            <div class="moda-body px-10 py-9">
+
+                                <!-- Social links -->
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="text-gray-350" href="#!">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="text-gray-350" href="#!">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="text-gray-350" href="#!">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="text-gray-350" href="#!">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="text-gray-350" href="#!">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                </ul>
+                            </div>
+        </nav>
+
+
+        <nav class="navbar nav-unstyled navbar-expand-md navbar-default d-block mobilegoaway">
+            <!--Top Nav Bar-->
+            <nav class="zaranav mb-2 mobilegoaway">
+                <div class="container-fluid d-flex">
+                    <div class="col-md-3 offset-md-1">
+                        <a class="icon nav-link active" href="index.html"> <img class="img-fluid logo"
+                                src="./images/logo.png"></a>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-3 offsetright-md-1 justify-content-end">
+                        <ul class="navbar-nav d-none d-md-flex ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" href="#modalSearch">
+                                    <i class="fe fe-search px-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item ml-lg-n4">
+                                <a class="nav-link" href="./account-orders.html">
+                                    <i class="fe fe-user px-2"><span class="px-2 mb-2 navtexttop">LOGIN</span></i>
+                                </a>
+                            </li>
+                            <li class="nav-item ml-lg-n4">
+                                <a class="nav-link" href="./account-wishlist.html">
+                                    <i class="fe fe-heart px-2"><span class="px-2 navtexttop">SAVED</span></i>
+                                </a>
+                            </li>
+                            <li class="nav-item ml-lg-n4">
+                                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+                                    <i class="fe fe-shopping-cart"><span class="px-2 navtexttop">CART</span></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <form class="d-block">
+                        </form>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </nav>
+
+
+            <!--Second Nav Bar-->
+            <nav class="zaranav zaradropdown mobilegoaway">
+                <div class="container zaradropdown">
+                    <div class=" zaradropdown collapse navbar-collapse" id="navbarCollapse">
+                        <ul
+                            class=" zaradropdown navbar-nav mx-auto me-auto mb-5 mb-md-0 col-md-10 offset-md-2 text-center">
+                            <!--Collections Drop Down-->
+                            <li class="nav-item dropdown zaradropdown position-static hovered">
+                                <a class="nav-link active navtext px-4 ps-5 ms-5" aria-current="page"
+                                    data-toggle="dropdown" href="#" aria-expanded="true">COLLECTIONS</a>
+                            </li>
+
+                            <!--Women Dropdown Section-->
+
+                            <li class="nav-item dropdown position-static hovered">
+                                <a class="nav-link active navtext px-4" aria-current="page" data-toggle="dropdown"
+                                    href="#" aria-expanded="true">WOMEN</a>
+                                <!-- Menu -->
+                                <div class="dropdown-menu w-100 mobilegoaway">
+
+
+                                    <div class="dropdown-menu show" style="min-width: 650px;">
+                                        <div class="card card-lg">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-4">
+
+                                                        <!-- Heading -->
+                                                        <div class="mb-5 newslettertextmobile px-4 ">Shop by Category
+                                                        </div>
+
+                                                        <!-- Links -->
+                                                        <ul class="list-styled mb-6 mb-md-0 mt-1 font-size-sm px-4">
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Tops</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">T-Shirts</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Shirts</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Knitwear</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Jackets/Blazers</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Skirts/Shorts</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Dresses/Jumpsuits</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext "
+                                                                    href="../shop.html">Hoodies/Sweatshirts</a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <!-- Heading -->
+
+
+                                                    </div>
+                                                    <div class="col-3">
+
+                                                        <!-- Heading -->
+                                                        <ul class="list-styled mt-6 pt-6 pe-4">
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Coats/Trenches</a>
+                                                            </li>
+                                                            <li class="list-styled-item ">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Sets</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Jeans</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Suits</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Lingerie</a>
+                                                            </li>
+                                                            <li class="list-styled-item">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Bags</a>
+                                                            </li>
+                                                            <li class="list-styled-item ">
+                                                                <a class="list-styled-link dropdowntext"
+                                                                    href="../shop.html">Shoes</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-5 px-5">
+
+                                                        <!-- Links -->
+                                                        <!-- Heading -->
+                                                        <div class="mb-0 font-weight-bold newslettertextmobile">NEW
+                                                        </div>
+                                                        <p class="dropdowntext">Snag these fresh new arrivals</p>
+
+                                                        <!-- Heading -->
+                                                        <div class="mb-0 font-weight-bold newslettertextmobile">BEST
+                                                            SELLERS</div>
+                                                        <p class="dropdowntext">Check out our favorite styles</p>
+                                                        <!-- Heading -->
+                                                        <div class="mb-0 newslettertextmobile">COLLECTIONS</div>
+                                                        <p class="dropdowntext">Shop our collection lookbooks</p>
+
+                                                        <!-- Heading -->
+                                                        <div class="mb-0 font-weight-bold newslettertextmobile">
+                                                            FALL/WINTER 2021</div>
+                                                        <p class="dropdowntext">Get cozy in our fall collection</p>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="icon nav-link active navtext px-4" href="">KIDS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="icon nav-link active navtext px-4" href="">BEAUTY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="icon nav-link active navtext px-4" href="">ABOUT</a>
+                            </li>
+                        </ul>
+                        <form class="d-block">
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </nav>
+
+        <section class="pt-7 pb-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Heading -->
+                        <h3 class="mb-10 cartheader">Shopping Cart</h3>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-7">
+
+                        <!-- List group -->
+                        <ul class="list-group list-group-lg list-group-flush-x mb-6">
+
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+
+                                        <!-- Image -->
+                                        <a href="">
+                                            <img src="./images/pinkblazer.jpg" alt="..." class="img-fluid">
+                                        </a>
+
+                                    </div>
+                                    <div class="col">
+
+                                        <!-- Title -->
+                                        <div class="d-flex mb-2 font-weight-bold">
+                                            <a class="cartheading" href="">Fuschia Blazer</a> <span
+                                                class="ml-auto">$48.00
+                                                USD</span>
+                                        </div>
+
+                                        <!-- Text -->
+                                        <p class="mb-7 ordertext2">
+                                            Size: L <br>
+                                            Color: FUCHSIA
+                                        </p>
+                                        <!--Footer -->
+                                        <div class="d-flex align-items-center">
+
+                                            <!-- Select -->
+                                            <select class="custom-select custom-select-xxs w-auto">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                            </select>
+
+                                            <!-- Remove -->
+                                            <a class="font-size-xs text-gray-400 ml-auto" href="#!">
+                                                <i class="fe fe-edit"></i> Edit
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+
+                                        <!-- Image -->
+                                        <a href="">
+                                            <img src="./images/pinkbodysuit.webp" alt="..." class="img-fluid">
+                                        </a>
+
+                                    </div>
+                                    <div class="col">
+
+                                        <!-- Title -->
+                                        <div class="d-flex mb-2 font-weight-bold">
+                                            <a class="cartheading" href="">Padded Underwire Bodysuit</a> <span
+                                                class="ml-auto">$35.90
+                                                USD</span>
+                                        </div>
+
+                                        <!-- Text -->
+                                        <p class="mb-7 ordertext2">
+                                            Size: L <br>
+                                            Color: FUCHSIA
+                                        </p>
+                                        <!--Footer -->
+                                        <div class="d-flex align-items-center">
+
+                                            <!-- Select -->
+                                            <select class="custom-select custom-select-xxs w-auto">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                            </select>
+
+                                            <!-- Remove -->
+                                            <a class="font-size-xs text-gray-400 ml-auto" href="#!">
+                                                <i class="fe fe-edit"></i> Edit
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+
+                                        <!-- Image -->
+                                        <a href="">
+                                            <img src="./images/pinkpants.webp" alt="..." class="img-fluid">
+                                        </a>
+
+                                    </div>
+                                    <div class="col">
+
+                                        <!-- Title -->
+                                        <div class="d-flex mb-2 font-weight-bold">
+                                            <a class="cartheading" href="">Ankle Pants</a> <span class="ml-auto">$69.90
+                                                USD</span>
+                                        </div>
+
+                                        <!-- Text -->
+                                        <p class="mb-7 ordertext2">
+                                            Size: L <br>
+                                            Color: FUCHSIA
+                                        </p>
+                                        <!--Footer -->
+                                        <div class="d-flex align-items-center">
+
+                                            <!-- Select -->
+                                            <select class="custom-select custom-select-xxs w-auto">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                            </select>
+
+                                            <!-- Remove -->
+                                            <a class="font-size-xs text-gray-400 ml-auto" href="#!">
+                                                <i class="fe fe-edit"></i> Edit
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+
+                                        <!-- Image -->
+                                        <a href="">
+                                            <img src="./images/blackheels.webp" alt="..." class="img-fluid">
+                                        </a>
+
+                                    </div>
+                                    <div class="col">
+
+                                        <!-- Title -->
+                                        <div class="d-flex mb-2 font-weight-bold">
+                                            <a class="cartheading" href="">Leather High Heeled Sandals</a> <span
+                                                class="ml-auto">$169.00
+                                                USD</span>
+                                        </div>
+
+                                        <!-- Text -->
+                                        <p class="mb-7 ordertext2">
+                                            Size: 8 <br>
+                                            Color: BLACK
+                                        </p>
+                                        <!--Footer -->
+                                        <div class="d-flex align-items-center">
+
+                                            <!-- Select -->
+                                            <select class="custom-select custom-select-xxs w-auto">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                            </select>
+
+                                            <!-- Remove -->
+                                            <a class="font-size-xs text-gray-400 ml-auto" href="#!">
+                                                <i class="fe fe-edit"></i> Edit
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Footer -->
+                        <div class="row align-items-end justify-content-between mb-10 mb-md-0">
+                            <div class="col-12 col-md-7">
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
+
+                        <!-- Total -->
+                        <div class="card mb-7 bg-light">
+                            <div class="card-body">
+                                <ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
+                                    <li class="list-group-item d-flex ordertext1">
+                                        <span>Order Summary</span>
+                                    </li>
+                                    <li class="d-flex ordertext2 pt-4">
+                                        <span>Subtotal</span> <span class="ml-auto font-size-sm">$181.70</span>
+                                    </li>
+                                    <li class="d-flex ordertext2">
+                                        <span>Shipping</span> <span class="ml-auto font-size-sm">FREE</span>
+                                    </li>
+                                    <li class="d-flex ordertext2">
+                                        <span>Tax</span> <span class="ml-auto font-size-sm">$00.00</span>
+                                    </li>
+                                    <li class=" pt-4 d-flex ordertext1 ">
+                                        <span>TOTAL:</span> <span class="ml-auto ordertext1">$193.51</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <a class="btn btn-block btn-dark mb-2 checkoutbutton" href="checkout.html">Checkout</a>
+
+                        <!-- Link -->
+                        <a class="btn btn-link btn-sm px-0 text-body" href="shop.html">
+                            <i class="fe fe-arrow-left mr-2"></i> Continue Shopping
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer class="footer mt-auto py-3 zarafooter nohorizontalscroll">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 nopadding align-items-md-end">
+                        <div class="newslettertextmobile pt-3 pb-md-3">SIGN UP FOR OUR
+                            NEWSLETTER</div>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" id="checkoutBillingEmail" type="email"
+                                placeholder="Email" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-6  nopadding offset-md-1 align-items-md-start">
+                        <ul class="footerlist nopadding">
+                            <li class="footertext">TIKTOK</li>
+                            <li class="footertext">INSTAGRAM</li>
+                            <li class="footertext">FACEBOOK</li>
+                            <li class="footertext mobilegoaway">TWITTER</li>
+                            <li class="footertext mobilegoaway">PINTEREST</li>
+                            <li class="footertext mobilegoaway">YOUTUBE</li>
+                        </ul>
+
+                        <p class="footertext ps-2">DO NOT SELL MY PERSONAL INFORMATION | PRIVACY AND COOKIES POLICY |
+                            TERMS OF USES
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+        <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+        <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+        <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+        <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+        <script src="./assets/libs/list.js/dist/list.min.js"></script>
+        <script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
+        <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+        <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+        <!--Theme JS-->
+        <script src="./assets/js/theme.min.js"></script>
+
+    </body>
+
+</html>
