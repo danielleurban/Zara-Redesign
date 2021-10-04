@@ -467,91 +467,246 @@
                         <form>
 
                             <!-- Heading -->
-                            <div class="checkouttheader ps-3">Guest Checkout</div>
-                            <!-- Billing details -->
-                            <div class="row mb-5">
+                            <div class="checkouttheader pb-6">Payment</div>
+                            <div class=" cartheading pb-4">Choose your Payment Method</div>
 
-                            </div>
+
+
                             <div class="col-12">
 
-                                <!-- Email -->
-                                <div class="form-group">
-                                    <label for="checkoutBillingEmail">Email *</label>
-                                    <input class="form-control form-control-sm" id="checkoutBillingEmail" type="email"
-                                        placeholder="Email" required="">
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="pt-4 pb-4 btn btn-block btn-dark mb-5 checkoutbutton" href="checkout2.html">
-                                    Checkout as Guest
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <h6 class="mb-5 checkouttheader">Returning Customer</h6>
-                                <!-- Email -->
-                                <div class="form-group">
-                                    <label for="checkoutBillingCountry">Email *</label>
-                                    <input class="form-control form-control-sm" id="checkoutBillingCountry" type="text"
-                                        placeholder="Email" required="">
+
+
+
+                                <!-- Billing details -->
+                                <div class="row mb-9">
+                                    <div class="col-12 col-md-6">
+
+
+                                    </div>
+
+
+
+
+                                    <div class="col-12">
+
+
+
+
+                                    </div>
                                 </div>
 
-                            </div>
-                            <div class="col-12">
 
-                                <!-- Password -->
-                                <div class="form-group">
-                                    <label for="checkoutBillingAddress">Password *</label>
-                                    <input class="form-control form-control-sm" id="checkoutBillingAddress" type="text"
-                                        placeholder="Password" required="">
-                                </div>
-                            </div>
-                            <div class="col-8">
 
-                                <div class="pt-4 pb-4 btn btn-block btn-dark mb-5 checkoutbutton">Login
+
+                                <!-- Address -->
+                                <div class="mb-9">
+
+
+
+                                    <!-- Collapse -->
+                                    <div class="collapse" id="checkoutShippingAddressCollapse">
+                                        <div class="row mt-6">
+                                            <div class="col-12">
+
+
+                                            </div>
+                                            <div class="col-12">
+
+
+                                            </div>
+                                            <div class="col-12">
+
+
+                                            </div>
+                                            <div class="col-6">
+
+
+
+                                            </div>
+                                            <div class="col-6">
+
+
+
+                                            </div>
+                                            <div class="col-12">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div>
+
+
+                                <!-- Heading -->
+
+
+                                <!-- List group -->
+                                <div class="list-group list-group-sm mb-7">
+                                    <div class="list-group-item">
+
+                                        <!-- Radio -->
+                                        <div class="custom-control custom-radio">
+
+                                            <!-- Input -->
+                                            <input class="custom-control-input" id="checkoutPaymentCard" name="payment"
+                                                type="radio" data-toggle="collapse" data-action="show"
+                                                data-target="#checkoutPaymentCardCollapse">
+
+                                            <!-- Label -->
+                                            <label class="custom-control-label font-size-sm text-body text-nowrap"
+                                                for="checkoutPaymentCard">
+                                                Credit Card <img class="ml-2" src="assets/img/brands/color/cards.svg"
+                                                    alt="...">
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="list-group-item collapse py-0" id="checkoutPaymentCardCollapse">
+
+                                        <!-- Form -->
+                                        <div class="form-row py-5">
+                                            <div class="col-12">
+                                                <div class="form-group mb-4">
+                                                    <label class="sr-only" for="checkoutPaymentCardNumber">Card
+                                                        Number</label>
+                                                    <input class="form-control form-control-sm"
+                                                        id="checkoutPaymentCardNumber" type="text"
+                                                        placeholder="Card Number *" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group mb-4">
+                                                    <label class="sr-only" for="checkoutPaymentCardName">Name on
+                                                        Card</label>
+                                                    <input class="form-control form-control-sm"
+                                                        id="checkoutPaymentCardName" type="text"
+                                                        placeholder="Name on Card *" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group mb-md-0">
+                                                    <label class="sr-only" for="checkoutPaymentMonth">Month</label>
+                                                    <select class="custom-select custom-select-sm"
+                                                        id="checkoutPaymentMonth">
+                                                        <option>January</option>
+                                                        <option>February</option>
+                                                        <option>March</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group mb-md-0">
+                                                    <label class="sr-only" for="checkoutPaymentCardYear">Year</label>
+                                                    <select class="custom-select custom-select-sm"
+                                                        id="checkoutPaymentCardYear">
+                                                        <option>2017</option>
+                                                        <option>2018</option>
+                                                        <option>2019</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="input-group input-group-merge">
+                                                    <input class="form-control form-control-sm"
+                                                        id="checkoutPaymentCardCVV" type="text" placeholder="CVV *"
+                                                        required="">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text" data-toggle="popover"
+                                                            data-placement="top" data-trigger="hover"
+                                                            data-content="The CVV Number on your credit card or debit card is a 3 digit number on VISA, MasterCard and Discover branded credit and debit cards."
+                                                            data-original-title="" title="">
+                                                            <i class="fe fe-help-circle"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="list-group-item">
+
+                                        <!-- Radio -->
+                                        <div class="custom-control custom-radio">
+
+                                            <!-- Input -->
+                                            <input class="custom-control-input" id="checkoutPaymentPaypal"
+                                                name="payment" type="radio" data-toggle="collapse" data-action="hide"
+                                                data-target="#checkoutPaymentCardCollapse">
+
+                                            <!-- Label -->
+                                            <label class="custom-control-label font-size-sm text-body text-nowrap"
+                                                for="checkoutPaymentPaypal">
+                                                <img src="assets/img/brands/color/paypal.svg" alt="...">
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Notes -->
+                                <textarea class="form-control form-control-sm mb-9 mb-md-0 font-size-xs" rows="5"
+                                    placeholder="Order Notes (optional)"></textarea>
+
+                        </form>
+
                     </div>
 
-                    <!-- Heading -->
+                    <div class="col-12">
+
+                    </div>
+                    <div class="col-12">
 
 
-                    <!-- Order Summary -->
-                    <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
+                    </div>
+                    <div class="col-8">
 
-                        <!-- Total -->
-                        <div class="card mb-7 bg-light">
-                            <div class="card-body">
-                                <ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
-                                    <li class="list-group-item d-flex ordertext1">
-                                        <span>Order Summary</span>
-                                    </li>
-                                    <li class="d-flex ordertext2 pt-4">
-                                        <span>Subtotal</span> <span class="ml-auto font-size-sm">$294.70</span>
-                                    </li>
-                                    <li class="d-flex ordertext2">
-                                        <span>Shipping</span> <span class="ml-auto font-size-sm">FREE</span>
-                                    </li>
-                                    <li class="d-flex ordertext2">
-                                        <span>Tax</span> <span class="ml-auto font-size-sm">$19.16</span>
-                                    </li>
-                                    <li class=" pt-4 d-flex ordertext1 ">
-                                        <span>TOTAL:</span> <span class="ml-auto ordertext1">$313.86</span>
-                                    </li>
 
-                                </ul>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Heading -->
+
+
+                <!-- Order Summary -->
+                <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
+
+                    <!-- Total -->
+                    <div class="card mb-7 bg-light">
+                        <div class="card-body">
+                            <ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
+                                <li class="list-group-item d-flex ordertext1">
+                                    <span>Order Summary</span>
+                                </li>
+                                <li class="d-flex ordertext2 pt-4">
+                                    <span>Subtotal</span> <span class="ml-auto font-size-sm">$294.70</span>
+                                </li>
+                                <li class="d-flex ordertext2">
+                                    <span>Shipping</span> <span class="ml-auto font-size-sm">FREE</span>
+                                </li>
+                                <li class="d-flex ordertext2">
+                                    <span>Tax</span> <span class="ml-auto font-size-sm">$19.16</span>
+                                </li>
+                                <li class=" pt-4 d-flex ordertext1 ">
+                                    <span>TOTAL:</span> <span class="ml-auto ordertext1">$313.86</span>
+                                </li>
+
+                            </ul>
                         </div>
-
-                        <!-- Button -->
-
-                        <!-- Link -->
-                        <a class="btn btn-link btn-sm px-0 text-body" href="shop.html">
-                            <i class="fe fe-arrow-left mr-2"></i> Back to Cart
-                        </a>
-
                     </div>
+
+                    <!-- Button -->
+                    <a class="btn btn-block btn-dark mb-2 checkoutbutton" href="checkout4.html">Review Order</a>
+                    <!-- Link -->
+                    <a class="btn btn-link btn-sm px-0 text-body" href="shop.html">
+                        <i class="fe fe-arrow-left mr-2"></i> Back to Cart
+                    </a>
 
                 </div>
+
+            </div>
             </div>
             </div>
         </section>
