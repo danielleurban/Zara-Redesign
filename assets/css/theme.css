@@ -2651,7 +2651,7 @@ input[type="button"].btn-block {
 .custom-control-label {
   position: relative;
   margin-bottom: 0;
-  color: #767676;
+  color:black;
   vertical-align: top; }
   .custom-control-label::before {
     position: absolute;

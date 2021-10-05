@@ -6,6 +6,11 @@
   overflow-x: hidden;
 }
 
+.centerhorizontalincolumn {
+  display: block;
+  margin:auto;
+}
+
 .offsetright-1{
   margin-right: 8.33333333%;
 }
@@ -92,7 +97,9 @@ margin-right: 16.66666667%;
   border-right: 1px black;
   height: 268px;
 }
-
+.nomargin{
+  margin-bottom: 0;
+}
 /*Home Page Things*/
 
 @media (min-width: 576px) {
@@ -434,4 +441,134 @@ select.form-control:focus::-ms-value {
   padding: 0.8125rem 1.25rem;
   font-size: 0.9375rem;
   line-height: 1.5;
+}
+
+/*Cart Page*/
+
+
+.cartheader {
+  font-family: "The Seasons Bold";
+  color:black;
+  font-size: 36px;
+}
+@media (max-width: 768px) {
+  .cartheader {
+    font-family: "The Seasons Bold";
+    color:black;
+    font-size: 24px;
+  }}
+  
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 65 Medium"), url(./fonts/HelveticaNeueLTProMd.otf);
+}
+
+.ordertext1{
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-size: 24px;
+  color: black;
+  padding-bottom: 0% !important;
+}
+
+.ordertext2{
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-size: 16px;
+  color: black;
+}
+@media (max-width: 768px) {
+  .ordertext2{
+    font-family: "Helvetica Neue LT Pro 55 Roman";
+    font-size: 14px;
+    color: black;
+  }
+}
+.cartheading{
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-size: 18px;
+  color: black;
+  padding-bottom: 0% !important;
+}
+@media (max-width: 768px) {
+  .cartheading{
+    font-family: "Helvetica Neue LT Pro 65 Medium";
+    font-size: 16px;
+    color: black;
+    padding-bottom: 0% !important;
+  }}
+  
+.checkoutbutton{
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-size: 18px;
+  color: white;
+}
+/*Checkout Process*/
+
+.checkouttheader {
+  font-family: "The Seasons Bold";
+  color:black;
+  font-size: 36px;
+}
+@media (max-width: 768px) {
+  .checkouttheader {
+    font-family: "The Seasons Bold";
+    color:black;
+    font-size: 30px;
+  }}
+  .progressnumber{
+  font-family: "Gallient Regular";
+  color:black;
+  font-size: 64px;
+  font-style: normal;
+  }
+  .progressline {
+    display: inline-block;
+    border-top: 1px solid black;
+    width: 2em;}
+
+
+
+.zaraprogressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 48px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+
+.zaraprogressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.zaraprogressbar li:first-child:after {
+    content: none;
+}
+.zaraprogressbar li.active {
+    color:black;
+}
+.zaraprogressbar li.active:before {
+    border-color:black;
+}
+.zaraprogressbar li.active + li:after {
+    background-color: black;
+}
+
+.shiptable{
+  border-left: 1px black;
+  border-right: 1 px black;
+  border-bottom: none;
+  border-top: none;
+  border: 1px black;
 }
