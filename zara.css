@@ -432,3 +432,26 @@ select.form-control:focus::-ms-value {
   font-size: 0.9375rem;
   line-height: 1.5;
 }
+
+/*Item Page Specific CSS*/
+
+.desktop-item-page {
+  margin: auto;
+  width: 100%;
+  z-index:0;
+  top:150px;
+  position:absolute;
+  z-index:-1;
+}
+
+.fuschia-blazermain{
+    text-align: center;
+    position:relative;
+    z-index: 0;
+}
+
+.fuschia-blazer1{
+left: 0%;
+position: absolute;
+z-index: 5;
+}
