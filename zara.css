@@ -2,6 +2,51 @@
 
 
 /*this makes our pages not have a horizontal scroll on mobile, pls do not remove*/
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro-65Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("font/HelveticaNeueLTPro-Md.otf") format("opentype");
+}
+@font-face {
+  font-family: "The Seasons-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("font/TheSeasons-Bd.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gallient-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/GallientRegular-eZoMp.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica Neue LT Pro-75Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("font/HelveticaNeueLTPro-Bd.otf") format("opentype");
+}
+@font-face {
+  font-family: "Helvetica Neue LT Pro-55Roman";
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/HelveticaNeueLTPro-Roman.otf") format("opentype");
+}
+@font-face {
+  font-family: "The Seasons-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/TheSeasons-Reg.otf") format("opentype");
+}
+@font-face {
+  font-family: "Helvetica Neue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("font/HelveticaNeueMedium.ttf") format("truetype");
+}
+
+
 .nohorizontalscroll { 
   overflow-x: hidden;
 }
@@ -443,6 +488,39 @@ select.form-control:focus::-ms-value {
   line-height: 1.5;
 }
 
+
+/*Item Page Specific CSS*/
+
+.Item_Title{
+  color: black;
+  font-family: The Seasons-Bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 400%;
+}
+
+.col-10{
+  right:50%;
+  z-index:-1;
+}
+
+.Price_Blazer{
+  font-family: The Seasons-Bold;
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 400%;
+}
+
+.Collection
+{
+  font-family: Gallient-Regular;
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200%;
+}
+=======
 /*Cart Page*/
 
 
