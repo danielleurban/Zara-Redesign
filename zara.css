@@ -598,3 +598,20 @@ select.form-control:focus::-ms-value {
 padding-top: 0% !important;
 padding-left: 0% !important;
 }
+
+.invalid-feedback {
+  display: none !important;
+  width: 100% !important;
+  margin-top: 0.25rem !important;
+  font-size: 0.875em !important;
+  color: #dc3545 !important;
+}
+
+.input-items span {
+  font-size: 14px;
+  margin-left: 2px
+}
+
+.input-items {
+  margin-bottom: 10px
+}

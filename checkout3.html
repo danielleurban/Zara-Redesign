@@ -461,7 +461,7 @@
 
                             <!-- Heading -->
                             <div class="checkouttheader pb-6 px-3">Payment</div>
-                            <div class=" cartheading pb-4 px-3">Choose your Payment Method</div>
+                            <div class=" cartheading pb-4">Choose your Payment Method</div>
 
 
 
@@ -564,13 +564,15 @@
                                                 <div class="form-group mb-4">
                                                     <label class="sr-only" for="checkoutPaymentCardNumber">Card
                                                         Number</label>
-                                                    <input class="form-control form-control-sm"
+                                                    <input type="text" size="20" autocomplete="off" class="form-control"
+                                                        id="number" required class="form-control form-control-sm"
                                                         id="checkoutPaymentCardNumber" type="text"
                                                         placeholder="Card Number *" required="">
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group mb-4">
+
                                                     <label class="sr-only" for="checkoutPaymentCardName">Name on
                                                         Card</label>
                                                     <input class="form-control form-control-sm"
@@ -750,6 +752,24 @@
         <!--Theme JS-->
         <script src="./assets/js/theme.min.js"></script>
 
+        <!--Script to put autospacing on credit card form-->
+        <script type="text/javascript">
+            // enable spacing for credit card number     
+            $('#number').on('keyup', function (e) {
+                var val = $(this).val();
+                var newval = '';
+                val = val.replace(/\s/g, '');
+
+                // iterate to letter-spacing after every 4 digits   
+                for (var i = 0; i < val.length; i++) {
+                    if (i % 4 == 0 && i > 0) newval = newval.concat(' ');
+                    newval = newval.concat(val[i]);
+                }
+
+                // format in same input field 
+                $(this).val(newval);
+            });
+        </script>
     </body>
 
 </html>
