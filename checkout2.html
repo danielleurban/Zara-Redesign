@@ -45,8 +45,8 @@
         <nav class=" navbar navbar-expand navbar-light mobileonly ">
             <div class="zaranav container">
 
-                <!-- Brand -->
-                <a class="px-4 pb-4" href="index.html"> <img class="img-fluid logo" src="./images/logo.png"></a>
+                <!-- ZARA logo -->
+                <a class="px-5 pb-4" href="index.html"> <img class="img-fluid logo" src="./images/logo.png"></a>
 
                 <!-- Nav -->
                 <ul class="navbar-nav  d-md-flex ml-auto">
@@ -297,7 +297,7 @@
                             class=" zaradropdown navbar-nav mx-auto me-auto mb-5 mb-md-0 col-md-10 offset-md-2 text-center">
                             <!--Collections Drop Down-->
                             <li class="nav-item dropdown zaradropdown position-static hovered">
-                                <a class="nav-link active navtext px-4 ps-5 ms-5" aria-current="page"
+                                <a class="nav-link active navtext px-4 ps-5 ms-7" aria-current="page"
                                     data-toggle="dropdown" href="#" aria-expanded="true">COLLECTIONS</a>
                             </li>
 
@@ -450,7 +450,7 @@
                 <div class="row">
                     <!-- Progress Bar -->
                     <div class="col-md-8 offset-md-2 mb-5 mb-md-10 text-center">
-                        <img class="img-fluid" src="./images/progressbar1.svg" alt="progress bar">
+                        <img class="img-fluid px-3" src="./images/progress2.svg" alt="progress bar">
                     </div>
                 </div>
                 <div class="row">
@@ -465,70 +465,7 @@
                                 <!-- Heading -->
                                 <div class="checkouttheader pb-6">Shipping Information</div>
                                 <div class=" cartheading pb-4">Choose your Shipping Method</div>
-                                <!-- Shipping Options Table -->
-                                <div class="row mb-5">
-                                    <div class="table-responsive mb-6">
-                                        <table class="table table-bordered table-sm table-hover mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="custom-control custom-radio">
-                                                            <input class="custom-control-input"
-                                                                id="checkoutShippingStandard" name="shipping"
-                                                                type="radio">
-                                                            <label class="custom-control-label text-body text-nowrap"
-                                                                for="checkoutShippingStandard">
-                                                                In-store pickup
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Pick up on Friday, Oct. 15th </td>
-                                                    <td>FREE</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="custom-control custom-radio">
-                                                            <input class="custom-control-input"
-                                                                id="checkoutShippingExpress" name="shipping"
-                                                                type="radio">
-                                                            <label class="custom-control-label text-body text-nowrap"
-                                                                for="checkoutShippingExpress">
-                                                                Pick up point
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Pick up on Friday, Oct. 15th</td>
-                                                    <td>FREE</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <!--Label-->
-                                                        <div class="custom-control custom-radio"
-                                                            data-bs-toggle="collapse" href="#shippingaddress"
-                                                            aria-expanded="false" aria-controls="shippingaddress"
-                                                            role="radio">
-                                                            <input class="custom-control-input"
-                                                                id="checkoutShippingShort" name="shipping" type="radio">
-                                                            <label class="custom-control-label text-body text-nowrap"
-                                                                for="checkoutShippingShort">
-                                                                Ship to an Address
-                                                            </label>
-                                                        </div>
-                                                        <div class="collapse" id="shippingaddress">
-                                                            <div class="card card-body">
-                                                                Some placeholder content for the collapse component.
-                                                                This panel is hidden by default but revealed when the
-                                                                user activates the relevant trigger.
-                                                            </div>
-                                                    </td>
-                                                    <td>Delivery by Thursday, Oct. 14th</td>
-                                                    <td>FREE</td>
-                                                </tr>
 
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
 
                                 <!--Trying Second Attempt at drop down table -->
                                 <div class="list-group list-group-sm mb-7">
@@ -543,16 +480,27 @@
                                                 data-target="#checkoutPaymentCardCollapse">
 
                                             <!-- Label -->
-                                            <label class="ordertext2 custom-control-label text-nowrap"
-                                                for="checkoutPaymentCard">
-                                                <p class="ordertext2 ordertext2 nomargin">Ship to an Address</p>
-                                            </label>
-                                            <label class=" ordertext2 ps-5 ms-3 text-nowrap">
-                                                Thurs, Oct. 14th
-                                            </label>
-                                            <label class=" ordertext2 float-end text-nowrap">
-                                                FREE
-                                            </label>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label class="ordertext2 custom-control-label text-nowrap"
+                                                        for="checkoutPaymentCard">
+                                                        <p class="ordertext2 ordertext2 nomargin">Ship to an Address</p>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6 shiptable">
+                                                    <label
+                                                        class=" ordertext2 pt-3 pt-md-0 ps-4 ms-2 ms-md-0 ps-md-4 text-nowrap">
+                                                        Delivery by Thurs, Oct. 14th
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class=" ordertext2 text-nowrap ps-4 ms-2 ms-md-0 ps-md-4">
+                                                        FREE
+                                                    </label>
+                                                </div>
+                                            </div>
+
+
                                         </div>
 
                                     </div>
@@ -598,7 +546,7 @@
 
                                                     <!-- Company Name -->
                                                     <div class="form-group">
-                                                        <label for="checkoutBillingCompany">Company name *</label>
+                                                        <label for="checkoutBillingCompany">Company name </label>
                                                         <input class="form-control form-control-sm"
                                                             id="checkoutBillingCompany" type="text"
                                                             placeholder="Company name (optional)">
@@ -670,9 +618,60 @@
                                                             placeholder="Mobile Phone" required="">
                                                     </div>
                                                     <p class="ordertext2 mt-5">Want to make checkout faster next time?
-                                                        <a class="link-underline"
-                                                            href="javascript:window.open('createaccount.html', 'Create Account', 'width=200,height=150');">CREATE
-                                                            AN ACCOUNT</a> to save your information
+                                                        <a class="ordertext3" data-toggle="modal"
+                                                            data-target="#createaccount">CREATE AN ACCOUNT</a> to save
+                                                        your
+                                                        information
+                                                    <div class="btn btn-block btn-dark mb-2 checkoutbutton">Done</div>
+                                                    <!--Modal-->
+                                                    <div class="modal fade" id="createaccount" tabindex="-1"
+                                                        role="dialog" aria-labelledby="exampleModalLabel"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                                        Create your Account
+                                                                    </h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <label for="accountPassword">
+                                                                            Email *
+                                                                        </label>
+                                                                        <input class="form-control form-control-sm"
+                                                                            id="accountPassword" type="password"
+                                                                            placeholder="IvyArisa1@gmail.com"
+                                                                            required="">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="accountPassword">
+                                                                            Choose Password *
+                                                                        </label>
+                                                                        <input class="form-control form-control-sm"
+                                                                            id="accountPassword" type="password"
+                                                                            placeholder="Password *" required="">
+                                                                    </div>
+                                                                    <p class="ordertext2">Password must be</p>
+                                                                    <ul>
+                                                                        <li>at least 8 characters</li>
+                                                                        <li>contain at least 1 special character</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Create
+                                                                        Account
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     </p>
                                                 </div>
                                             </div>
@@ -690,16 +689,25 @@
                                                 data-target="#checkoutPaymentCardCollapse">
 
                                             <!-- Label -->
-                                            <label class="custom-control-label font-size-sm text-body text-nowrap"
-                                                for="checkoutPaymentPaypal">
-                                                <p class="ordertext2 ordertext2 nomargin pe-2">Pick up Point</p>
-                                            </label>
-                                            <label class=" ordertext2 ps-md-5 ms-5 text-nowrap">
-                                                Thurs, Oct. 14th
-                                            </label>
-                                            <label class=" ordertext2 float-end text-nowrap">
-                                                FREE
-                                            </label>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label class="ordertext2 custom-control-label text-nowrap"
+                                                        for="checkoutPaymentCard">
+                                                        <p class="ordertext2 ordertext2 nomargin">Pick-up point</p>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6 shiptable">
+                                                    <label
+                                                        class=" ordertext2 pt-3 pt-md-0 ps-4 ms-2 ms-md-0 ps-md-4 text-nowrap">
+                                                        Delivery by Thurs, Oct. 14th
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class=" ordertext2 text-nowrap ps-4 ms-2 ms-md-0 ps-md-4">
+                                                        FREE
+                                                    </label>
+                                                </div>
+                                            </div>
 
 
                                         </div>
@@ -717,20 +725,21 @@
 
                                             <!-- Labels -->
                                             <div class="row">
-                                                <div class="col-4">
+                                                <div class="col-md-4">
                                                     <label
                                                         class="custom-control-label font-size-sm text-body text-nowrap"
                                                         for="checkoutPaymentPaypal">
-                                                        <p class="ordertext2 nomargin ordertext2">In-store pickup</p>
+                                                        <p class="ordertext2 nomargin nopaddingtb ordertext2">In-store
+                                                            pickup</p>
                                                     </label>
                                                 </div>
-                                                <div class="col-4 shiptable">
-                                                    <label class="  text-nowrap ordertext2">
-                                                        Thurs, Oct. 14th
+                                                <div class="col-md-6  shiptable">
+                                                    <label class="text-nowrap ordertext2 ps-5 ps-md-4">
+                                                        Delivery by Thurs, Oct. 14th
                                                     </label>
                                                 </div>
-                                                <div class="col-4">
-                                                    <label class=" float-end text-nowrap ordertext2">
+                                                <div class="col-md-2 ">
+                                                    <label class=" ps-5 ps-md-4 text-nowrap ordertext2">
                                                         FREE
                                                     </label>
                                                 </div>
@@ -765,7 +774,7 @@
                                             </div>
                                             <div class="list-group-item collapse py-0" id="checkoutPaymentCardCollapse">
                                                 <!-- Form -->
-                                                <div class="form-row py-5">
+                                                <div class="form-row pt-5">
                                                     <div class="col-12">
 
                                                     </div>
@@ -866,7 +875,8 @@
         <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
         <!--Theme JS-->
         <script src="./assets/js/theme.min.js"></script>
-
+        <!--Custom JS-->
+        <script src="custom.js"></script>
     </body>
 
 </html>

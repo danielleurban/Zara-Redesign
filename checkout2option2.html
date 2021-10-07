@@ -45,7 +45,7 @@
         <nav class=" navbar navbar-expand navbar-light mobileonly ">
             <div class="zaranav container">
 
-                <!-- Brand -->
+                <!-- ZARA logo -->
                 <a class="px-5 pb-4" href="index.html"> <img class="img-fluid logo" src="./images/logo.png"></a>
 
                 <!-- Nav -->
@@ -448,10 +448,13 @@
         <section class="pt-7 pb-6">
             <div class="container">
                 <div class="row">
+                    <!-- Progress Bar -->
                     <div class="col-md-8 offset-md-2 mb-5 mb-md-10 text-center">
-                        <!-- Progress Bar -->
-                        <img class="img-fluid px-3" src="./images/progressbar1.svg" alt="progress bar">
+                        <img class="img-fluid px-3" src="./images/progress2.svg" alt="progress bar">
                     </div>
+                </div>
+                <div class="row">
+
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-7">
@@ -460,93 +463,355 @@
                         <form>
 
                             <!-- Heading -->
-                            <div class="checkouttheader ps-3">Guest Checkout</div>
-                            <!-- Billing details -->
-                            <div class="row mb-5">
+                            <div class="checkouttheader pb-6">Shipping Information</div>
+                            <div class=" cartheading pb-4">Choose your Shipping Method</div>
 
-                            </div>
-                            <div class="col-12">
 
-                                <!-- Email -->
-                                <div class="form-group">
-                                    <label for="checkoutBillingEmail">Email *</label>
-                                    <input class="form-control form-control-sm" id="checkoutBillingEmail" type="email"
-                                        placeholder="Email" required="">
+                            <!--Trying Second Attempt at drop down table -->
+                            <div class="list-group list-group-sm mb-7">
+                                <div class="list-group-item">
+
+                                    <!-- Radio -->
+                                    <div class="custom-control custom-radio">
+
+                                        <!-- Input -->
+                                        <input class="custom-control-input" id="checkoutPaymentCard" name="payment"
+                                            type="radio" data-toggle="collapse" data-action="show"
+                                            data-target="#checkoutPaymentCardCollapse">
+
+                                        <!-- Label -->
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label class="ordertext2 custom-control-label text-nowrap"
+                                                    for="checkoutPaymentCard">
+                                                    <p class="ordertext2 ordertext2 nomargin">Ship to an Address</p>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 shiptable">
+                                                <label
+                                                    class=" ordertext2 pt-3 pt-md-0 ps-4 ms-2 ms-md-0 ps-md-4 text-nowrap">
+                                                    Delivery by Thurs, Oct. 14th
+                                                </label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class=" ordertext2 text-nowrap ps-4 ms-2 ms-md-0 ps-md-4">
+                                                    FREE
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="list-group-item collapse py-0" id="checkoutPaymentCardCollapse">
+
+                                    <!-- Form -->
+                                    <div class="form-row py-5">
+                                        <div class="">
+                                            <div class="col-12 ">
+                                                <form class="needs-validation" novalidate="">
+                                                    <div class="row g-3">
+                                                        <div class="col-sm-6">
+                                                            <label for="firstName" class="form-label">First
+                                                                name*</label>
+                                                            <input type="text" class="form-control" id="firstName"
+                                                                placeholder="" value="" required="">
+                                                            <div class="invalid-feedback">
+                                                                Valid first name is required.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <label for="lastName" class="form-label">Last
+                                                                name*</label>
+                                                            <input type="text" class="form-control" id="lastName"
+                                                                placeholder="" value="" required="">
+                                                            <div class="invalid-feedback">
+                                                                Valid last name is required.
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="col-12">
+                                                            <label for="email" class="form-label">Email* <span
+                                                                    class="text-muted"></span></label>
+                                                            <input type="email" class="form-control" id="email"
+                                                                placeholder="you@example.com">
+                                                            <div class="invalid-feedback">
+                                                                Please enter a valid email address for shipping
+                                                                updates.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <label for="address" class="form-label">Address*</label>
+                                                            <input type="text" class="form-control" id="address"
+                                                                placeholder="1234 Main St" required="">
+                                                            <div class="invalid-feedback">
+                                                                Please enter your shipping address.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <label for="address2" class="form-label">Address 2 <span
+                                                                    class="text-muted">(Optional)</span></label>
+                                                            <input type="text" class="form-control" id="address2"
+                                                                placeholder="Apartment or suite">
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <label for="country" class="form-label">Country</label>
+                                                            <select class="form-select" id="country" required="">
+                                                                <option value="">Choose...</option>
+                                                                <option>United States</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                Please select a valid country.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4">
+                                                            <label for="state" class="form-label">State</label>
+                                                            <select class="form-select" id="state" required="">
+                                                                <option value="">Choose...</option>
+                                                                <option>Texas</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid state.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-3">
+                                                            <label for="zip" class="form-label">Zip*</label>
+                                                            <input type="text" class="form-control" id="zip"
+                                                                placeholder="" required="">
+                                                            <div class="invalid-feedback">
+                                                                Zip code required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+                                                    <hr class="my-4">
+
+                                                    <button
+                                                        class="btn btn-block btn-dark mb-2 checkoutbutton btn btn-primary btn-lg"
+                                                        type="submit" data-toggle="collapse"
+                                                        id="checkoutPaymentCard">Done</button>
+                                                </form>
+
+                                                <p class="ordertext2 mt-5">Want to make checkout faster next time?
+                                                    <a class="ordertext3" data-toggle="modal"
+                                                        data-target="#createaccount">CREATE AN ACCOUNT</a> to save
+                                                    your
+                                                    information
+
+                                                    <!--Modal-->
+                                                <div class="modal fade" id="createaccount" tabindex="-1" role="dialog"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">
+                                                                    Create your Account
+                                                                </h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="form-group">
+                                                                    <label for="accountPassword">
+                                                                        Email *
+                                                                    </label>
+                                                                    <input class="form-control form-control-sm"
+                                                                        id="accountPassword" type="password"
+                                                                        placeholder="IvyArisa1@gmail.com" required="">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="accountPassword">
+                                                                        Create Password *
+                                                                    </label>
+                                                                    <input class="form-control form-control-sm"
+                                                                        id="accountPassword" type="password"
+                                                                        placeholder="Password *" required="">
+                                                                </div>
+                                                                <p class="ordertext2">Password must be</p>
+                                                                <ul>
+                                                                    <li>at least 8 characters</li>
+                                                                    <li>contain at least 1 special character</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary"
+                                                                    data-dismiss="modal">Create
+                                                                    Account
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="list-group-item">
+
+                                    <!-- Radio -->
+                                    <div class="custom-control custom-radio">
+
+                                        <!-- Input -->
+                                        <input class="custom-control-input" id="" name="payment" type="radio"
+                                            data-toggle="collapse" data-action="hide"
+                                            data-target="#checkoutPaymentCardCollapse">
+
+                                        <!-- Label -->
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label class="ordertext2 custom-control-label text-nowrap"
+                                                    for="checkoutPaymentCard">
+                                                    <p class="ordertext2 ordertext2 nomargin">Pick-up point</p>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 shiptable">
+                                                <label
+                                                    class=" ordertext2 pt-3 pt-md-0 ps-4 ms-2 ms-md-0 ps-md-4 text-nowrap">
+                                                    Delivery by Thurs, Oct. 14th
+                                                </label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class=" ordertext2 text-nowrap ps-4 ms-2 ms-md-0 ps-md-4">
+                                                    FREE
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="list-group-item">
+
+                                    <!-- Radio -->
+                                    <div class="custom-control custom-radio">
+
+                                        <!-- Input -->
+                                        <input class="custom-control-input" id="" name="payment" type="radio"
+                                            data-toggle="collapse" data-action="hide"
+                                            data-target="#checkoutPaymentCardCollapse">
+
+                                        <!-- Labels -->
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label class="custom-control-label font-size-sm text-body text-nowrap"
+                                                    for="checkoutPaymentPaypal">
+                                                    <p class="ordertext2 nomargin nopaddingtb ordertext2">In-store
+                                                        pickup</p>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6  shiptable">
+                                                <label class="text-nowrap ordertext2 ps-5 ps-md-4">
+                                                    Delivery by Thurs, Oct. 14th
+                                                </label>
+                                            </div>
+                                            <div class="col-md-2 ">
+                                                <label class=" ps-5 ps-md-4 text-nowrap ordertext2">
+                                                    FREE
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-8">
-                                <a class="btn btn-block btn-dark mb-5 pb-md-5 checkoutbutton pt-4 pb-4"
-                                    href="checkout2option2.html">Checkout as
-                                    Guest</a>
 
+                            <!-- Shipping Address Section-->
+                            <div class="col-12">
+                                <form>
+
+
+
+
+                                    <!-- Shit that doesn't do anything but if I delete the rows the page gets fucked up -->
+                                    <div class="mb-9">
+                                        <!-- Collapse -->
+                                        <div class="collapse" id="checkoutShippingAddressCollapse">
+                                            <div class="row mt-6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- List group -->
+                                    <div class="list-group list-group-sm mb-7">
+                                        <div class="">
+                                            <!-- Radio -->
+                                            <div class="">
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item collapse py-0" id="checkoutPaymentCardCollapse">
+                                            <!-- Form -->
+                                            <div class="form-row pt-5">
+                                                <div class="col-12">
+
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                             </div>
                     </div>
-                    <div class="col-12">
-                        <h6 class="mb-5 mt-md-6 checkouttheader">Returning Customer</h6>
-                        <!-- Email -->
-                        <div class="form-group">
-                            <label for="checkoutBillingCountry">Email *</label>
-                            <input class="form-control form-control-sm" id="checkoutBillingCountry" type="text"
-                                placeholder="Email" required="">
+
+
+                    <!-- Order Summary -->
+                    <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
+
+                        <!-- Total -->
+                        <div class="card mb-7 bg-light">
+                            <div class="card-body">
+                                <ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
+                                    <li class="list-group-item d-flex ordertext1">
+                                        <span>Order Summary</span>
+                                    </li>
+                                    <li class="d-flex ordertext2 pt-4">
+                                        <span>Subtotal</span> <span class="ml-auto font-size-sm">$294.70</span>
+                                    </li>
+                                    <li class="d-flex ordertext2">
+                                        <span>Shipping</span> <span class="ml-auto font-size-sm">FREE</span>
+                                    </li>
+                                    <li class="d-flex ordertext2">
+                                        <span>Tax</span> <span class="ml-auto font-size-sm">$19.16</span>
+                                    </li>
+                                    <li class=" pt-4 d-flex ordertext1 ">
+                                        <span>TOTAL:</span> <span class="ml-auto ordertext1">$313.86</span>
+                                    </li>
+
+                                </ul>
+                            </div>
                         </div>
 
+                        <!-- Button -->
+                        <a class="btn btn-block btn-dark mb-2 checkoutbutton" href="checkout3.html">Proceed to
+                            Payment</a>
+                        <!-- Link -->
+                        <a class="btn btn-link btn-sm px-0 text-body" href="shop.html">
+                            <i class="fe fe-arrow-left mr-2"></i> Back to Account
+                        </a>
+
                     </div>
-                    <div class="col-12">
-
-                        <!-- Password -->
-                        <div class="form-group">
-                            <label for="checkoutBillingAddress">Password *</label>
-                            <input class="form-control form-control-sm" id="checkoutBillingAddress" type="text"
-                                placeholder="Password" required="">
-                        </div>
-                    </div>
-                    <div class="col-8">
-
-                        <div class="pt-4 pb-4 btn btn-block btn-dark mb-5 checkoutbutton">Login
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Heading -->
-
-
-                <!-- Order Summary -->
-                <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
-
-                    <!-- Total -->
-                    <div class="card mb-7 bg-light">
-                        <div class="card-body">
-                            <ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
-                                <li class="list-group-item d-flex ordertext1">
-                                    <span>Order Summary</span>
-                                </li>
-                                <li class="d-flex ordertext2 pt-4">
-                                    <span>Subtotal</span> <span class="ml-auto font-size-sm">$294.70</span>
-                                </li>
-                                <li class="d-flex ordertext2">
-                                    <span>Shipping</span> <span class="ml-auto font-size-sm">FREE</span>
-                                </li>
-                                <li class="d-flex ordertext2">
-                                    <span>Tax</span> <span class="ml-auto font-size-sm">$19.16</span>
-                                </li>
-                                <li class=" pt-4 d-flex ordertext1 ">
-                                    <span>TOTAL:</span> <span class="ml-auto ordertext1">$313.86</span>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-
-                    <!-- Link -->
-                    <a class="btn btn-link btn-sm px-0 text-body" href="shop.html">
-                        <i class="fe fe-arrow-left mr-2"></i> Back to Cart
-                    </a>
 
                 </div>
-
-            </div>
             </div>
             </div>
         </section>

@@ -90,7 +90,19 @@ margin-right: 16.66666667%;
   margin-top: 6rem !important;
 }
 .mt-md-9 {
-  margin-top: 7rem !important;
+  margin-top: 7rem !important;}
+
+  .mt-md-10 {
+    margin-top: 8rem !important;}
+
+  .mt-md-11 {
+    margin-top: 9rem !important;
+}
+.ms-6 {
+  margin-left: 4rem !important;
+}
+.ms-7 {
+  margin-left: 5rem !important;
 }
 /*Nav Bar Things*/
 
@@ -556,6 +568,13 @@ select.form-control:focus::-ms-value {
   font-size: 16px;
   color: black;
 }
+.ordertext3{
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-size: 16px;
+  color: black;
+  text-decoration-line: underline !important;
+}
+
 @media (max-width: 768px) {
   .ordertext2{
     font-family: "Helvetica Neue LT Pro 55 Roman";
@@ -643,6 +662,39 @@ select.form-control:focus::-ms-value {
     background-color: black;
 }
 
+
+@media (min-width: 768px){
+  .shiptable{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: none;
+    border-top: none;
+  }
+}
+
+
+.nopaddingtb{
+padding-top: 0% !important;
+padding-left: 0% !important;
+}
+
+.invalid-feedback {
+  display: none !important;
+  width: 100% !important;
+  margin-top: 0.25rem !important;
+  font-size: 0.875em !important;
+  color: #dc3545 !important;
+}
+
+.input-items span {
+  font-size: 14px;
+  margin-left: 2px
+}
+
+.input-items {
+  margin-bottom: 10px
+}
+=======
 .shiptable{
   border-left: 1px black;
   border-right: 1 px black;
@@ -650,3 +702,4 @@ select.form-control:focus::-ms-value {
   border-top: none;
   border: 1px black;
 }
+
