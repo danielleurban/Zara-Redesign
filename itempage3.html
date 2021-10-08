@@ -254,6 +254,9 @@
               <li class="nav-item ml-lg-n4">
                 <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
                   <i class="fe fe-shopping-cart"><span class="px-2 navtexttop">CART</span></i>
+                  <span data-cart-items="2">
+                  </span>
+                </a>
                 </a>
               </li>
             </ul>
@@ -402,24 +405,1973 @@
     </nav>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="./assets/libs/list.js/dist/list.min.js"></script>
-    <script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
-    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
-    <!--Theme JS-->
-    <script src="./assets/js/theme.min.js"></script>
+    <!-- MODALS -->
+
+    <!-- Product Quick View-->
+    <div class="modal fade" id="modalProduct" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-x" aria-hidden="true"></i>
+          </button>
+
+          <!-- Content -->
+          <div class="container-fluid px-xl-0">
+            <div class="row align-items-center mx-xl-0">
+              <div class="col-12 col-lg-6 col-xl-5 py-4 py-xl-0 px-xl-0">
+
+                <!-- Image -->
+                <img class="img-fluid" src="./images/pinkbodysuit.webp" alt="...">
+
+                <!-- Button -->
+                <a class="btn btn-sm btn-block btn-primary" href="./product.html">
+                  More Product Info <i class="fe fe-info ml-2"></i>
+                </a>
+
+              </div>
+              <div class="col-12 col-lg-6 col-xl-7 py-9 px-md-9">
+
+                <!-- Heading -->
+                <h4 class="mb-3 itemtitle2">Padded Underwire Bodysuit</h4>
+
+                <!-- Price -->
+                <div class="mb-7">
+                  <span class="priceblazer2">$39.90</span>
+                </div>
+
+                <!-- Form -->
+                <form>
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <p>
+                      Color: <img class="img-fluid px-2" src="images/colordot.svg">
+                    </p>
+
+
+                  </div>
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <p>
+                      Size: <strong><span id="modalProductSizeCaption">M</span></strong>
+                    </p>
+
+                    <!-- Radio -->
+                    <div class="mb-2">
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="modalProductSize"
+                          id="modalProductSizeOne" value="XS" data-toggle="form-caption"
+                          data-target="#modalProductSizeCaption">
+                        <label class="custom-control-label" for="modalProductSizeOne">XS</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="modalProductSize"
+                          id="modalProductSizeTwo" value="S" data-toggle="form-caption"
+                          data-target="#modalProductSizeCaption" disabled>
+                        <label class="custom-control-label" for="modalProductSizeTwo">S</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="modalProductSize"
+                          id="modalProductSizeThree" value="M" data-toggle="form-caption"
+                          data-target="#modalProductSizeCaption">
+                        <label class="custom-control-label" for="modalProductSizeThree">M</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="modalProductSize"
+                          id="modalProductSizeFour" value="L" data-toggle="form-caption"
+                          data-target="#modalProductSizeCaption" checked>
+                        <label class="custom-control-label" for="modalProductSizeFour">L</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="modalProductSize"
+                          id="modalProductSizeFive" value="XL" data-toggle="form-caption"
+                          data-target="#modalProductSizeCaption">
+                        <label class="custom-control-label" for="modalProductSizeFive">XL</label>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+                  <div class="form-group mb-0">
+                    <div class="form-row">
+                      <div class="col-12 col-lg-auto">
+
+                        <!-- Quantity -->
+                        <select class="custom-select mb-2">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+
+                      </div>
+                      <div class="col-12 col-lg">
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-block btn-dark mb-2">
+                          Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
+                        </button>
+
+                      </div>
+                      <div class="col-12 col-lg-auto">
+
+                        <!-- Wishlist -->
+                        <button class="btn btn-outline-dark btn-block mb-2" data-toggle="button">
+                          Wishlist <i class="fe fe-heart ml-2"></i>
+                        </button>
+
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Search -->
+    <div class="modal fixed-right fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical" role="document">
+        <div class="modal-content">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-x" aria-hidden="true"></i>
+          </button>
+
+          <!-- Header-->
+          <div class="modal-header line-height-fixed font-size-lg">
+            <strong class="mx-auto">Search Products</strong>
+          </div>
+
+          <!-- Body: Form -->
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="modalSearchCategories">Categories:</label>
+                <select class="custom-select" id="modalSearchCategories">
+                  <option selected>All Categories</option>
+                  <option>Women</option>
+                  <option>Men</option>
+                  <option>Kids</option>
+                </select>
+              </div>
+              <div class="input-group input-group-merge">
+                <input class="form-control" type="search" placeholder="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-border" type="submit">
+                    <i class="fe fe-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Body: Results (add `.d-none` to disable it) -->
+          <div class="modal-body border-top font-size-sm">
+
+            <!-- Heading -->
+            <p>Search Results:</p>
+
+            <!-- Items -->
+            <div class="row align-items-center position-relative mb-5">
+              <div class="col-4 col-md-3">
+
+                <!-- Image -->
+                <img class="img-fluid" src="./assets/img/products/product-5.jpg" alt="...">
+
+              </div>
+              <div class="col position-static">
+
+                <!-- Text -->
+                <p class="mb-0 font-weight-bold">
+                  <a class="stretched-link text-body" href="./product.html">Leather mid-heel Sandals</a> <br>
+                  <span class="text-muted">$129.00</span>
+                </p>
+
+              </div>
+            </div>
+            <div class="row align-items-center position-relative mb-5">
+              <div class="col-4 col-md-3">
+
+                <!-- Image -->
+                <img class="img-fluid" src="./assets/img/products/product-6.jpg" alt="...">
+
+              </div>
+              <div class="col position-static">
+
+                <!-- Text -->
+                <p class="mb-0 font-weight-bold">
+                  <a class="stretched-link text-body" href="./product.html">Cotton floral print Dress</a> <br>
+                  <span class="text-muted">$40.00</span>
+                </p>
+
+              </div>
+            </div>
+            <div class="row align-items-center position-relative mb-5">
+              <div class="col-4 col-md-3">
+
+                <!-- Image -->
+                <img class="img-fluid" src="./assets/img/products/product-7.jpg" alt="...">
+
+              </div>
+              <div class="col position-static">
+
+                <!-- Text -->
+                <p class="mb-0 font-weight-bold">
+                  <a class="stretched-link text-body" href="./product.html">Leather Sneakers</a> <br>
+                  <span class="text-primary">$85.00</span>
+                </p>
+
+              </div>
+            </div>
+            <div class="row align-items-center position-relative mb-5">
+              <div class="col-4 col-md-3">
+
+                <!-- Image -->
+                <img class="img-fluid" src="./assets/img/products/product-8.jpg" alt="...">
+
+              </div>
+              <div class="col position-static">
+
+                <!-- Text -->
+                <p class="mb-0 font-weight-bold">
+                  <a class="stretched-link text-body" href="./product.html">Cropped cotton Top</a> <br>
+                  <span class="text-muted">$29.00</span>
+                </p>
+
+              </div>
+            </div>
+            <div class="row align-items-center position-relative mb-5">
+              <div class="col-4 col-md-3">
+
+                <!-- Image -->
+                <img class="img-fluid" src="./assets/img/products/product-9.jpg" alt="...">
+
+              </div>
+              <div class="col position-static">
+
+                <!-- Text -->
+                <p class="mb-0 font-weight-bold">
+                  <a class="stretched-link text-body" href="./product.html">Floral print midi Dress</a> <br>
+                  <span class="text-muted">$50.00</span>
+                </p>
+
+              </div>
+            </div>
+
+            <!-- Button -->
+            <a class="btn btn-link px-0 text-reset" href="./shop.html">
+              View All <i class="fe fe-arrow-right ml-2"></i>
+            </a>
+
+          </div>
+
+          <!-- Body: Empty (remove `.d-none` to disable it) -->
+          <div class="d-none modal-body">
+
+            <!-- Text -->
+            <p class="mb-3 font-size-sm text-center">
+              Nothing matches your search
+            </p>
+            <p class="mb-0 font-size-sm text-center">
+              😞
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Shopping Cart -->
+    <div class="modal fixed-right fade" id="modalShoppingCart" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical" role="document">
+
+        <!-- Full cart (add `.d-none` to disable it) -->
+        <div class="modal-content">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-x" aria-hidden="true"></i>
+          </button>
+
+          <!-- Header-->
+          <div class="modal-header line-height-fixed font-size-lg">
+            <strong class="mx-auto">Your Cart (2)</strong>
+          </div>
+
+          <!-- List group -->
+          <ul class="list-group list-group-lg list-group-flush">
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-4">
+
+                  <!-- Image -->
+                  <a href="./product.html">
+                    <img class="img-fluid" src="./assets/img/products/product-6.jpg" alt="...">
+                  </a>
+
+                </div>
+                <div class="col-8">
+
+                  <!-- Title -->
+                  <p class="font-size-sm font-weight-bold mb-6">
+                    <a class="text-body" href="./product.html">Cotton floral print Dress</a> <br>
+                    <span class="text-muted">$40.00</span>
+                  </p>
+
+                  <!--Footer -->
+                  <div class="d-flex align-items-center">
+
+                    <!-- Select -->
+                    <select class="custom-select custom-select-xxs w-auto">
+                      <option value="1">1</option>
+                      <option value="1">2</option>
+                      <option value="1">3</option>
+                    </select>
+
+                    <!-- Remove -->
+                    <a class="font-size-xs text-gray-400 ml-auto" href="#!">
+                      <i class="fe fe-x"></i> Remove
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-4">
+
+                  <!-- Image -->
+                  <a href="./product.html">
+                    <img class="img-fluid" src="./assets/img/products/product-10.jpg" alt="...">
+                  </a>
+
+                </div>
+                <div class="col-8">
+
+                  <!-- Title -->
+                  <p class="font-size-sm font-weight-bold mb-6">
+                    <a class="text-body" href="./product.html">Suede cross body Bag</a> <br>
+                    <span class="text-muted">$49.00</span>
+                  </p>
+
+                  <!--Footer -->
+                  <div class="d-flex align-items-center">
+
+                    <!-- Select -->
+                    <select class="custom-select custom-select-xxs w-auto">
+                      <option value="1">1</option>
+                      <option value="1">2</option>
+                      <option value="1">3</option>
+                    </select>
+
+                    <!-- Remove -->
+                    <a class="font-size-xs text-gray-400 ml-auto" href="#!">
+                      <i class="fe fe-x"></i> Remove
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Footer -->
+          <div class="modal-footer line-height-fixed font-size-sm bg-light mt-auto">
+            <strong>Subtotal</strong> <strong class="ml-auto">$89.00</strong>
+          </div>
+
+          <!-- Buttons -->
+          <div class="modal-body">
+            <a class="btn btn-block btn-dark" href="./checkout.html">Continue to Checkout</a>
+            <a class="btn btn-block btn-outline-dark" href="./shopping-cart.html">View Cart</a>
+          </div>
+
+        </div>
+
+        <!-- Empty cart (remove `.d-none` to enable it) -->
+        <div class="modal-content d-none">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-x" aria-hidden="true"></i>
+          </button>
+
+          <!-- Header-->
+          <div class="modal-header line-height-fixed font-size-lg">
+            <strong class="mx-auto">Your Cart (0)</strong>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body flex-grow-0 my-auto">
+
+            <!-- Heading -->
+            <h6 class="mb-7 text-center">Your cart is empty 😞</h6>
+
+            <!-- Button -->
+            <a class="btn btn-block btn-outline-dark" href="#!">
+              Continue Shopping
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <div class="modal fixed-right fade" id="modalSidebar" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical" role="document">
+        <div class="modal-content">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-x" aria-hidden="true"></i>
+          </button>
+
+          <!-- Body -->
+          <div class="modal-body px-10 my-auto">
+
+            <!-- Nav -->
+            <ul class="nav nav-vertical nav-unstyled font-size-h2" id="sidebarNav">
+              <li class="nav-item">
+
+                <!-- Toggle -->
+                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#sidebarHome">
+                  Home
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="sidebarHome" data-parent="#sidebarNav">
+                  <ul class="list-styled font-size-lg py-3 mb-0">
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./index.html">Default</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./index-classic.html">Classic</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./index-fashion.html">Fashion</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./index-boxed.html">Boxed</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./index-simple.html">Simple</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./index-asymmetric.html">Asymmetric</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./index-sidenav.html">Sidenav</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./index-landing.html">Landing</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </li>
+              <li class="nav-item">
+
+                <!-- Toggle -->
+                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#sidebarCatalog">
+                  Catalog
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="sidebarCatalog" data-parent="#sidebarNav">
+                  <div class="row">
+                    <div class="col-12 py-3">
+
+                      <!-- Heading -->
+                      <h6 class="mb-5 font-weight-bold">Clothing</h6>
+
+                      <!-- Links -->
+                      <ul class="list-styled font-size-lg py-3">
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">All Clothing</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Blouses & Shirts</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Coats & Jackets</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Dresses</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Hoodies & Sweats</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Denim</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Jeans</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Jumpers & Cardigans</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Leggings</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="col-12 py-3">
+
+                      <!-- Heading -->
+                      <h6 class="mb-5 font-weight-bold">Shoes & Boots</h6>
+
+                      <!-- Links -->
+                      <ul class="list-styled font-size-lg">
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">All Shoes & Boots</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Branded Shoes</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Boots</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Heels</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Trainers</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Sandals</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Shoes</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Wide Fit Shoes</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="col-12 py-3">
+
+                      <!-- Heading -->
+                      <h6 class="mb-5 font-weight-bold">Bags & Accessories</h6>
+
+                      <!-- Links -->
+                      <ul class="list-styled font-size-lg">
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">All Bags & Accessories</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Accessories</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Bags & Purses</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Luggage</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Belts</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Hats</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Hair Accessories</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Jewellery</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Travel Accessories</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item">
+
+                <!-- Toggle -->
+                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#sidebarShop">
+                  Shop
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="sidebarShop" data-parent="#sidebarNav">
+                  <div class="row">
+                    <div class="col-12 py-3">
+
+                      <!-- Heading -->
+                      <h6 class="mb-5">Shop</h6>
+
+                      <!-- Links -->
+                      <ul class="list-styled font-size-lg">
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop.html">Default</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop-topbar.html">Topbar</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop-collapse.html">Collapse</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop-simple.html">Simple</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shop-masonry.html">Masonry</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="col-12 py-3">
+
+                      <!-- Heading -->
+                      <h6 class="mb-5">Product</h6>
+
+                      <!-- Links -->
+                      <ul class="list-styled font-size-lg">
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./product.html">Default</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./product-images-left.html">Images Left</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./product-image-grid.html">Image Grid</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./product-image-slider.html">Image Slider</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./product-images-stacked.html">Images Stacked</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="col-12 py-3">
+
+                      <!-- Heading -->
+                      <h6 class="mb-5">Support</h6>
+
+                      <!-- Links -->
+                      <ul class="list-styled font-size-lg">
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shopping-cart.html">Shopping Cart</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./checkout.html">Checkout</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./order-completed.html">Order Completed</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./shipping-and-returns.html">Shipping & Returns</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="col-12 py-3">
+
+                      <!-- Heading -->
+                      <h6 class="mb-5">Account</h6>
+
+                      <!-- Links -->
+                      <ul class="list-styled font-size-lg">
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-order.html">Order</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-orders.html">Orders</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-wishlist.html">Wishlist</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-personal-info.html">Personal Info</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-address.html">Addresses</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-address-edit.html">Addresses: New</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-payment.html">Payment</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-payment-edit.html">Payment: New</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./account-payment-choose.html">Payment: Choose</a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" href="./auth.html">Auth</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="col-12 py-3">
+
+                      <!-- Heading -->
+                      <h6 class="mb-5">Modals</h6>
+
+                      <!-- Links -->
+                      <ul class="list-styled font-size-lg">
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" data-toggle="modal" href="#modalNewsletterHorizontal">
+                            Newsletter: Horizontal
+                          </a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" data-toggle="modal" href="#modalNewsletterVertical">
+                            Newsletter: Vertical
+                          </a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" data-toggle="modal" href="#modalProduct">
+                            Product
+                          </a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" data-toggle="modal" href="#modalSearch">
+                            Search
+                          </a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" data-toggle="modal" href="#modalShoppingCart">
+                            Shopping Cart
+                          </a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" data-toggle="modal" href="#modalSizeChart">
+                            Size Chart
+                          </a>
+                        </li>
+                        <li class="list-styled-item">
+                          <a class="list-styled-link" data-toggle="modal" href="#modalWaitList">
+                            Wait List
+                          </a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item">
+
+                <!-- Toggle -->
+                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#sidebarPages">
+                  Pages
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="sidebarPages" data-parent="#sidebarNav">
+                  <ul class="list-styled font-size-lg py-3 mb-0">
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./about.html">About</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./store-locator.html">Store Locator</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./coming-soon.html">Coming Soon</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./404.html">404</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </li>
+              <li class="nav-item">
+
+                <!-- Toggle -->
+                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#sidebarBlog">
+                  Blog
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="sidebarBlog" data-parent="#sidebarNav">
+                  <ul class="list-styled font-size-lg py-3 mb-0">
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="list-styled-item">
+                      <a class="list-styled-link" href="./blog-post.html">Blog Post</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./docs/getting-started.html">Docs</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- Body -->
+          <div class="moda-body px-10 py-9">
+
+            <!-- Social links -->
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="text-gray-350" href="#!">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-gray-350" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-gray-350" href="#!">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-gray-350" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-gray-350" href="#!">
+                  <i class="fab fa-medium-m"></i>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Footer -->
+            <div class="font-size-xxs text-gray-350">
+              © 2019 All rights reserved. Designed by Unvab.
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Size Chart -->
+    <div class="modal fade" id="modalSizeChart" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-x" aria-hidden="true"></i>
+          </button>
+
+          <!-- Header-->
+          <div class="modal-header line-height-fixed font-size-lg">
+            <strong class="mx-auto">Size Chart</strong>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body border-bottom">
+
+            <!-- Header -->
+            <div class="d-flex mb-7">
+
+              <!-- Heading -->
+              <h5 class="mb-0">Clothing</h5>
+
+              <!-- Toggles -->
+              <div class="btn-group btn-group-toggle ml-auto" data-toggle="buttons">
+                <label class="btn btn-xxs btn-circle btn-outline-dark font-size-xxxs rounded-0 active">
+                  <input type="radio" name="modalSizeChartUnitOne" checked> IN
+                </label>
+                <label class="btn btn-xxs btn-circle btn-outline-dark font-size-xxxs rounded-0 ml-2">
+                  <input type="radio" name="modalSizeChartUnitOne"> CM
+                </label>
+              </div>
+
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm table-hover mb-0">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>US</th>
+                    <th>Bust</th>
+                    <th>Waist</th>
+                    <th>Hips</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>XS</td>
+                    <td>2</td>
+                    <td>32</td>
+                    <td>24 - 25</td>
+                    <td>33 - 34</td>
+                  </tr>
+                  <tr>
+                    <td>S</td>
+                    <td>4</td>
+                    <td>34 - 35</td>
+                    <td>26 - 27</td>
+                    <td>35 - 26</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>6</td>
+                    <td>36 - 37</td>
+                    <td>28 - 29</td>
+                    <td>38 - 40</td>
+                  </tr>
+                  <tr>
+                    <td>L</td>
+                    <td>8</td>
+                    <td>38 - 29</td>
+                    <td>30 - 31</td>
+                    <td>42 - 44</td>
+                  </tr>
+                  <tr>
+                    <td>XL</td>
+                    <td>10</td>
+                    <td>40 - 41</td>
+                    <td>32 - 33</td>
+                    <td>45 - 47</td>
+                  </tr>
+                  <tr>
+                    <td>XXL</td>
+                    <td>12</td>
+                    <td>42 - 43</td>
+                    <td>34 - 35</td>
+                    <td>48 - 50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+
+            <!-- Header -->
+            <div class="d-flex mb-7">
+
+              <!-- Heading -->
+              <h5 class="mb-0">Shoes</h5>
+
+              <!-- Toggles -->
+              <div class="btn-group btn-group-toggle ml-auto" data-toggle="buttons">
+                <label class="btn btn-xxs btn-circle btn-outline-dark font-size-xxxs rounded-0 active">
+                  <input type="radio" name="modalSizeCharUnitTwo" checked> IN
+                </label>
+                <label class="btn btn-xxs btn-circle btn-outline-dark font-size-xxxs rounded-0 ml-2">
+                  <input type="radio" name="modalSizeCharUnitTwo"> CM
+                </label>
+              </div>
+
+            </div>
+
+            <!-- Tables -->
+            <div class="row">
+              <div class="col-12 col-lg-6">
+
+                <!-- Table -->
+                <div class="table-responsive">
+                  <table class="table table-bordered table-sm table-hover mb-lg-0">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>US</th>
+                        <th>Foot Length</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>36</td>
+                        <td>5</td>
+                        <td>22.8</td>
+                      </tr>
+                      <tr>
+                        <td>26.5</td>
+                        <td>5.5</td>
+                        <td>23.1</td>
+                      </tr>
+                      <tr>
+                        <td>37</td>
+                        <td>6</td>
+                        <td>23.5</td>
+                      </tr>
+                      <tr>
+                        <td>37.5</td>
+                        <td>6.</td>
+                        <td>23.5</td>
+                      </tr>
+                      <tr>
+                        <td>38</td>
+                        <td>7</td>
+                        <td>24.1</td>
+                      </tr>
+                      <tr>
+                        <td>38.5</td>
+                        <td>7.5</td>
+                        <td>24.5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+
+                <!-- Table -->
+                <div class="table-responsive">
+                  <table class="table table-bordered table-sm table-hover mb-0">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>US</th>
+                        <th>Foot Length</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>36</td>
+                        <td>5</td>
+                        <td>22.8</td>
+                      </tr>
+                      <tr>
+                        <td>39</td>
+                        <td>8</td>
+                        <td>24.1</td>
+                      </tr>
+                      <tr>
+                        <td>40</td>
+                        <td>9</td>
+                        <td>25.4</td>
+                      </tr>
+                      <tr>
+                        <td>40.5</td>
+                        <td>9.5</td>
+                        <td>25.7</td>
+                      </tr>
+                      <tr>
+                        <td>41</td>
+                        <td>10</td>
+                        <td>26.0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Wait List -->
+    <div class="modal fade" id="modalWaitList" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+          <!-- Close -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-x" aria-hidden="true"></i>
+          </button>
+
+          <!-- Header-->
+          <div class="modal-header line-height-fixed font-size-lg">
+            <strong class="mx-auto">Wait List</strong>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row mb-6">
+              <div class="col-12 col-md-3">
+
+                <!-- Image -->
+                <a href="./product.html">
+                  <img class="img-fluid mb-7 mb-md-0" src="./assets/img/products/product-6.jpg" alt="...">
+                </a>
+
+              </div>
+              <div class="col-12 col-md-9">
+
+                <!-- Label -->
+                <p>
+                  <a class="font-weight-bold text-body" href="./product.html">Cotton floral print Dress</a>
+                </p>
+
+                <!-- Radio -->
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeOne"
+                    value="6" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeOne">3XS</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeTwo"
+                    value="6.5" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeTwo">2XS</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeThree"
+                    value="7" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeThree">XS</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeFour"
+                    value="7.5" data-toggle="form-caption" data-target="#modalWaitListSizeCaption" checked>
+                  <label class="custom-control-label" for="modalWaitListSizeFour">S</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeFive"
+                    value="8" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeFive">M</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeSix"
+                    value="8.5" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeSix">LG</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeSeven"
+                    value="9" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeSeven">XL</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeEight"
+                    value="9.5" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeEight">2XL</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeNine"
+                    value="10" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeNine">3XL</label>
+                </div>
+                <div class="custom-control custom-control-inline custom-control-size mb-2">
+                  <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeTen"
+                    value="10.5" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
+                  <label class="custom-control-label" for="modalWaitListSizeTen">4XL</label>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-12">
+
+                <!-- Text -->
+                <p class="font-size-sm text-center text-gray-500">
+                  Justo ut diam erat hendrerit morbi porttitor,
+                  per eu curabitur diam sociis.
+                </p>
+
+              </div>
+            </div>
+            <div class="form-row mb-2">
+              <div class="col-12 col-md-6">
+
+                <!-- Form group -->
+                <div class="form-group">
+                  <label class="sr-only" for="listName">Your Name</label>
+                  <input class="form-control" id="listName" type="text" placeholder="Your Name *" required>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+
+                <!-- Form group -->
+                <div class="form-group">
+                  <label class="sr-only" for="listEmail">Your Name</label>
+                  <input class="form-control" id="listEmail" type="email" placeholder="Your Email *" required>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center">
+
+                <!-- Button -->
+                <button class="btn btn-dark" type="submit">Subscribe</button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BREADCRUMB -->
+    <nav class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb mb-0 font-size-xs text-gray-400">
+              <li class="breadcrumb-item">
+                <a class="text-gray-400" href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-gray-400" href="shop.html">Women's Shoes</a>
+              </li>
+              <li class="breadcrumb-item active">
+                Leather Sneakers
+              </li>
+            </ol>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PRODUCT -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-md-6">
+
+                <!-- Card -->
+                <div class="card">
+
+
+                  <!-- Slider -->
+                  <div class="mb-4" data-flickity='{"draggable": false, "fade": true}' id="productSlider">
+
+                    <!-- Item -->
+                    <a href="./images/fuschiablazer1@.png" data-fancybox>
+                      <img src="./images/fuschiablazer1@.png" alt="..." class="card-img-top">
+                    </a>
+
+                    <!-- Item -->
+                    <a href="./images/itempageimages/fuschiablazer2.png" data-fancybox>
+                      <img src="./images/itempageimages/fuschiablazer2.png" alt="..." class="card-img-top">
+                    </a>
+
+                    <!-- Item -->
+                    <a href="./images/itempageimages/fuschiablazer3.png" data-fancybox>
+                      <img src="./images/itempageimages/fuschiablazer3.png" alt="..." class="card-img-top">
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <!-- Slider -->
+                <div class="flickity-nav mx-n2 mb-10 mb-md-0"
+                  data-flickity='{"asNavFor": "#productSlider", "contain": true, "wrapAround": false}'>
+
+                  <!-- Item -->
+                  <div class="col-12 px-2" style="max-width: 113px;">
+
+                    <!-- Image -->
+                    <div class="embed-responsive embed-responsive-1by1 bg-cover"
+                      style="background-image: url(./images/fuschiablazer1@.png);"></div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 px-2" style="max-width: 113px;">
+
+                    <!-- Image -->
+                    <div class="embed-responsive embed-responsive-1by1 bg-cover"
+                      style="background-image: url(./images/itempageimages/fuschiablazer2.png);"></div>
+
+                  </div>
+
+                  <!-- Item -->
+                  <div class="col-12 px-2" style="max-width: 113px;">
+
+                    <!-- Image -->
+                    <div class="embed-responsive embed-responsive-1by1 bg-cover"
+                      style="background-image: url(./images/itempageimages/fuschiablazer3.png);"></div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6 pl-lg-10">
+
+                <!-- Header -->
+                <div class="row mb-1">
+                  <div class="col">
+
+                    <!-- Preheading -->
+                    <a class="text-muted ordertext2" href="shop.html">Blazers</a>
+
+                  </div>
+                  <div class="col-auto">
+
+
+
+                  </div>
+                </div>
+
+                <!-- Heading -->
+                <h3 class="mb-2 itemtitle">Fuchsia Blazer</h3>
+
+                <!-- Price -->
+                <div class="mb-1">
+                  <h3 class="mb-4 mt-4 sgalhome2">Join Life Collection</h3>
+                </div>
+                <div class="rating font-size-sm mb-2" data-value="4">
+                  <div class="rating-item">
+                    <i class="fas fa-star star"></i>
+                  </div>
+                  <div class="rating-item">
+                    <i class="fas fa-star star"></i>
+                  </div>
+                  <div class="rating-item">
+                    <i class="fas fa-star star"></i>
+                  </div>
+                  <div class="rating-item">
+                    <i class="fas fa-star star"></i>
+                  </div>
+                  <div class="rating-item">
+                    <i class="fas fa-star star"></i>
+                  </div>
+                </div>
+                <a class="font-size-sm text-reset ml-2" href="#reviews">
+                  5.0 | 3 Reviews
+                  <p class="ml-1  priceblazer">$49.90</p>
+                </a>
+                <!-- Form -->
+                <form>
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <p class="nomargin">
+                      Color: <img class="img-fluid px-2" src="images/colordot.svg">
+
+                    </p>
+
+
+                  </div>
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <p class="mb-4 mt-4">
+                      Size: <strong><span id="sizeCaption">M</span></strong>
+                    </p>
+
+                    <!-- Radio -->
+                    <div class="mb-2">
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioOne" value="XS"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioOne">XS</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioOne" value="S"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioOne">S</label>
+                      </div>
+
+
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioThree" value="M"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioThree">M</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFour" value="L"
+                          data-toggle="form-caption" data-target="#sizeCaption" checked>
+                        <label class="custom-control-label" for="sizeRadioFour">L</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFive" value="XL"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioFive">XL</label>
+                      </div>
+
+
+                      <!-- Size chart -->
+                      <p class="mb-4 mt-4">
+                        <img src="assets/img/icons/icon-ruler.svg" alt="..." class="img-fluid"> <a
+                          class="text-reset text-decoration-underline ml-3" data-toggle="modal"
+                          href="#modalSizeChart">Size chart</a>
+                      </p>
+
+                      <div class="form-row mb-7">
+                        <div class="col-12 col-lg-auto">
+
+                          <!-- Quantity -->
+                          <select class="custom-select mb-2">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+
+                        </div>
+                        <div class="col-12 col-lg">
+
+                          <!-- Submit -->
+                          <button type="submit" class="btn btn-block btn-dark mb-2" data-toggle="modal"
+                            data-target="#itemadded">
+                            Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
+                          </button>
+
+                          <!--Modal-->
+                          <div class="modal fade" id="itemadded" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">
+                                    1 Item was added to your cart!
+                                  </h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col-md-6 text-center">
+                                      <img class="img-fluid" src="./images/itempageimages/fuschiablazer3.png"
+                                        alt="fuschia blazer">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <p class="cartheader">Fuchsia Blazer</p>
+                                      <p class="ordertext2 nomargin">$49.90</p>
+                                      <p class="ordertext2 nomargin">Size: M</p>
+                                      <p class="ordertext2 nomargin">QTY:1</p>
+                                      <p class="ordertext2 nomargin">Color:<img class="img-fluid px-2"
+                                          src="images/colordot.svg">
+                                      </p>
+
+
+                                    </div>
+
+
+                                  </div>
+                                </div>
+                                <div class=" modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Go to
+                                    Cart</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Continue
+                                    Shopping
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-auto">
+
+
+
+                    <span class="text-gray-500">Is your size/color sold out?</span>
+                    <a class="text-reset text-decoration-underline" data-toggle="modal" href="#modalWaitList">Join
+                      the
+                      Wait List!</a>
+                    </p>
+                    <p class="ordertext2">Product Details<i class="fe fe-plus ml-2"></i></p>
+                    <p class="ordertext2">Store Pickup Availability<i class="fe fe-plus ml-2"></i></p>
+                    <p class="ordertext2">Shipping and Returns<i class="fe fe-plus ml-2"></i></p>
+
+                  </div>
+              </div>
+
+              <!-- Text -->
+
+
+            </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Complete the Look -->
+      <section class="pt-11">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+
+              <!-- Heading -->
+              <h4 class="mb-5 mobileonly galhome2 ">Complete the Look</h4>
+
+              <!-- Items -->
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                  <!-- Card -->
+                  <div class="card mb-7">
+                    <!-- Image -->
+                    <div class="card-img">
+                      <!-- Image -->
+                      <a class="card-img-hover" href="product.html">
+                        <img class="card-img-top card-img-back" src="./images/pinkbodysuit.webp" alt="...">
+                        <img class="card-img-top card-img-front" src="./images/pinkbodysuit.webp" alt="...">
+                      </a>
+                      <!-- Actions -->
+                      <div class="card-actions">
+                        <span class="card-action">
+                          <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal"
+                            data-target="#modalProduct">
+                            <i class="fe fe-eye"></i>
+                          </button>
+                        </span>
+                        <span class="card-action">
+                          <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                            <i class="fe fe-heart"></i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body px-0">
+                      <!-- Category -->
+                      <div class="font-size-xs">
+                        <a class="text-muted" href="shop.html">Tops</a>
+                      </div>
+                      <!-- Title -->
+                      <div class="font-weight-bold">
+                        <a class="text-body" href="product.html">
+                          Padded Underwire Bodysuit
+                        </a>
+                      </div>
+                      <!-- Price -->
+                      <div class="font-weight-bold text-muted">
+                        $39.90
+                      </div>
+                      <button type="submit" class="btn btn-block btn-dark mb-2 mt-4" data-toggle="modal"
+                        data-target="#itemadded">
+                        Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+
+                  <!-- Card -->
+                  <div class="card mb-7">
+
+                    <!-- Image -->
+                    <div class="card-img">
+
+                      <!-- Image -->
+                      <a class="card-img-hover" href="product.html">
+                        <img class="card-img-top card-img-back" src="./images/pinkpants.webp" alt="...">
+                        <img class="card-img-top card-img-front" src="./images/pinkpants.webp" alt="...">
+                      </a>
+
+                      <!-- Actions -->
+                      <div class="card-actions">
+                        <span class="card-action">
+                          <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal"
+                            data-target="#modalProduct">
+                            <i class="fe fe-eye"></i>
+                          </button>
+                        </span>
+                        <span class="card-action">
+                          <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                            <i class="fe fe-heart"></i>
+                          </button>
+                        </span>
+                      </div>
+
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body px-0">
+
+                      <!-- Category -->
+                      <div class="font-size-xs">
+                        <a class="text-muted" href="shop.html">Bottoms</a>
+                      </div>
+
+                      <!-- Title -->
+                      <div class="font-weight-bold">
+                        <a class="text-body" href="product.html">
+                          Ankle Pants
+                        </a>
+                      </div>
+
+                      <!-- Price -->
+                      <div class="font-weight-bold text-muted">
+                        $69.90
+                      </div>
+                      <button type="submit" class="btn btn-block btn-dark mb-2 mt-4" data-toggle="modal"
+                        data-target="#itemadded">
+                        Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                  <!-- Card -->
+                  <div class="card mb-7">
+                    <!-- Image -->
+                    <div class="card-img">
+                      <!-- Image -->
+                      <a class="card-img-hover" href="product.html">
+                        <img class="card-img-top card-img-back" src="./images/blackheels.webp" alt="...">
+                        <img class="card-img-top card-img-front" src="./images/blackheels.webp" alt="...">
+                      </a>
+                      <!-- Actions -->
+                      <div class="card-actions">
+                        <span class="card-action">
+                          <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal"
+                            data-target="#modalProduct">
+                            <i class="fe fe-eye"></i>
+                          </button>
+                        </span>
+                        </span>
+                        <span class="card-action">
+                          <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                            <i class="fe fe-heart"></i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body px-0">
+                      <!-- Category -->
+                      <div class="font-size-xs">
+                        <a class="text-muted" href="shop.html">Shoes</a>
+                      </div>
+                      <!-- Title -->
+                      <div class="font-weight-bold">
+                        <a class="text-body" href="product.html">
+                          Leather High Heeled Sandals
+                        </a>
+                      </div>
+                      <!-- Price -->
+                      <div class="font-weight-bold">
+                        <span class="text-primary">$169.00</span>
+                      </div>
+                      <button type="submit" class="btn btn-block btn-dark mb-2 mt-4" data-toggle="modal"
+                        data-target="#itemadded">
+                        Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                  <p class="itemtitle mobilegoaway">Complete</p>
+                  <p class="ps-5 progressnumber mobilegoaway">
+                    the Look</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--Heading-->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-10 ">
+            <h4 class="itemtitle mt-10">Product Details</h4>
+          </div>
+        </div>
+      </div>
+      <!--Product Details-->
+      <section class="background">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="ordertext2 mt-5 mt-md-10">Straight-cut, double breasted blazer in woven fabric. Pointed
+                lapels,mock
+                chest
+                pocket, and front pockets with flap. Lined. </p>
+              <p class="ordertext2">Size - The model is 177 cm (5'10'') and wears a size Medium</p>
+              <p class="ordertext2">Fit - Regular Fit </p>
+              <p class="ordertext2">Composition- Outer Shell: 63% Polyester - 33% Viscose - 4% Elastane</p>
+              <p class="ordertext2">Composiiton- Lining: 100% Polyester</p>
+              <p class="ordertext2">Eco-Friendly Care: Caring for your clothes is caring for the environment.To keep
+                your jackets and coats clean, just freshen them out and wipe them with a
+                cloth or clothing brush. This is a more delicate process with fabrics and additionally avoids water and
+                energy consumption from washing processes. </p>
+              <p class="ordertext2"> </p>
+              <img class="img-fluid mb-10" src="./images/truetosize.svg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Heading -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <h4 class="itemtitle mt-10 pt-md-10">See What They're Saying</h4>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Top Section of Reviews -->
+      <section class="pt-9 pb-11 background" id="reviews">
+        <div class="container ">
+          <div class="row">
+            <div class="col-12 col-md mb-5 mb-md-10">
+              <!-- Stars -->
+              <div class="rating font-size-sm mb-2 float-left" data-value="4">
+                <div class="rating-item">
+                  <i class="fas fa-star star"></i>
+                </div>
+                <div class="rating-item">
+                  <i class="fas fa-star star"></i>
+                </div>
+                <div class="rating-item">
+                  <i class="fas fa-star star"></i>
+                </div>
+                <div class="rating-item">
+                  <i class="fas fa-star star"></i>
+                </div>
+                <div class="rating-item">
+                  <i class="fas fa-star star"></i>
+                </div>
+              </div>
+              <a class="ordertext2 float-left ps-4" href="#reviews">
+                5.0 | 3 Reviews
+                <a class="btn btn-sm btn-dark float-end mobilegoaway" data-toggle="collapse" href="#reviewForm">
+                  Write Review
+                </a>
+            </div>
+          </div>
+        </div>
+        <!--Review #1-->
+
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-4 mb-5">
+              <div class=" d-inline-flex px-5 py-5 whitebox ">
+                <div class="row">
+                  <div class="col px-5">
+                    <div class="text-center">
+                      <div class="rating mb-4" data-value="4">
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="ordertext1 text-center"> Elegant & comfortable</p>
+                    <p class="blazertext nomargin">This blazer is beautifully cut, lightweight, and perfect for dressing
+                      up
+                      jeans.
+                      The lining also has a nice color contrast that you don't see in the images. </p>
+                    <p class="blazertext float-right">-danielleurban1</p>
+                    <ul class="mt-9">
+                      <li class="blazertext">Fits: True to Size</li>
+                      <li class="blazertext">Size Purchased: Medium</li>
+                      <li class="blazertext">Size Normally Worn: Medium </li>
+                      <li class="blazertext">Yes, I reccomend this product</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!--Review #2-->
+
+            <div class="col col-md-4 mb-5 ">
+              <div class=" d-inline-flex px-5 py-5 whitebox ">
+                <div class="row">
+                  <div class="col px-5">
+                    <div class="text-center">
+                      <div class="rating mb-4" data-value="4">
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="ordertext1 text-center"> Elegant & comfortable</p>
+                    <p class="blazertext nomargin">This blazer is beautifully cut, lightweight, and perfect for
+                      dressing
+                      up
+                      jeans.
+                      The lining also has a nice color contrast that you don't see in the images. </p>
+                    <p class="blazertext float-right">-danielleurban1</p>
+                    <ul class="mt-9">
+                      <li class="blazertext">Fits: True to Size</li>
+                      <li class="blazertext">Size Purchased: Medium</li>
+                      <li class="blazertext">Size Normally Worn: Medium </li>
+                      <li class="blazertext">Yes, I reccomend this product</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Review #3-->
+
+            <div class="col col-md-4 mb-5">
+              <div class=" d-inline-flex px-5 py-5 whitebox ">
+                <div class="row">
+                  <div class="col px-5 ">
+                    <div class="text-center">
+                      <div class="rating mb-4" data-value="4">
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star star px-1"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="ordertext1 text-center"> Elegant & comfortable</p>
+                    <p class="blazertext nomargin">This blazer is beautifully cut, lightweight, and perfect for
+                      dressing
+                      up
+                      jeans.
+                      The lining also has a nice color contrast that you don't see in the images. </p>
+                    <p class="blazertext float-right">-danielleurban1</p>
+                    <ul class="mt-9">
+                      <li class="blazertext">Fits: True to Size</li>
+                      <li class="blazertext">Size Purchased: Medium</li>
+                      <li class="blazertext">Size Normally Worn: Medium </li>
+                      <li class="blazertext">Yes, I reccomend this product</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- JAVASCRIPT -->
+      <!-- Libs JS -->
+      <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+      <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+      <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+      <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+      <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+      <script src="./assets/libs/list.js/dist/list.min.js"></script>
+      <script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
+      <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+      <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+
+      <!-- Map (replace the API key to enable) -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKt8_N4-FKOnhI_pSaDL7g_g-XI1-R9E"></script>
+
+      <!-- Theme JS -->
+      <script src="./assets/js/theme.min.js"></script>
+
 
   </body>
-
-</html>
-</body>
 
 </html>

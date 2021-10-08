@@ -183,7 +183,7 @@ margin-right: 16.66666667%;
 }
 
 .galnumber {
-  font-family: "Gallient Regular";
+  font-family: "Gallient-Regular";
   color: white;
   font-size: 72px;
   font-style: normal;
@@ -192,7 +192,7 @@ margin-right: 16.66666667%;
 
 
 .galhome {
-  font-family: "Gallient Regular";
+  font-family: "Gallient-Regular";
   color: black;
   font-size: 96px;
   font-style: normal;
@@ -204,7 +204,7 @@ margin-right: 16.66666667%;
   }}
 
 .galhome2 {
-  font-family: "Gallient Regular";
+  font-family: "Gallient-Regular";
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -214,8 +214,29 @@ margin-right: 16.66666667%;
   font-style: normal;
   src: local("The Seasons Bold"), url(./fonts/TheSeasons-Bd.otf);
 }
+.itemtitle{
+  color: black;
+  font-family: "The Seasons-Bold";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+}
+.itemtitle3{
+  color: black;
+  font-family: "The Seasons-Bold";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+}
+.itemtitle2{
+  color: black;
+  font-family: "The Seasons-Bold";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+}
 .overlaytitle {
-  font-family: "The Seasons Bold";
+  font-family: "The Seasons-Bold";
   color: white;
   font-size: 36px;
 }
@@ -241,24 +262,24 @@ margin-right: 16.66666667%;
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT Pro 75 Bold";
+  font-family: "Helvetica Neue LT Pro-75Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Helvetica Neue LT Pro 75 Bold"), url(./fonts/HelveticaNeueLTProBd.otf);
 }
 @font-face {
-  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-family: "Helvetica Neue LT Pro-55Roman";
   font-style: normal;
   font-weight: normal;
   src: local("Helvetica Neue LT Pro 55 Roman"), url(./fonts/HelveticaNeueLTProRoman.otf);
 }
 .blazertext {
-  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-family: "Helvetica Neue LT Pro-55Roman";
   font-size: 14px;
   color: black;
 }
 .mobiledropdown{
-  font-family: "Helvetica Neue LT Pro 55 Roman" ;
+  font-family: "Helvetica Neue LT Pro-55Roman" ;
   color:white;
   font-size: 16px;
   padding-left: 3rem !important;
@@ -266,13 +287,13 @@ padding-top: 1rem !important;
   }
 
 .mobiledropdownbold{
-font-family: "Helvetica Neue LT Pro 75 Bold" ;
+font-family: "Helvetica Neue LT Pro-75Bold" ;
 color:white;
 font-size: 18px;
 }
 
 .dropdowntext{
-  font-family: "Helvetica Neue LT Pro 55 Roman" ;
+  font-family: "Helvetica Neue LT Pro-55Roman" ;
   color:black;
   font-size: 16px;
 }
@@ -386,7 +407,7 @@ background: linear-gradient(92.14deg, #969A8D 0%, #31402B 95.23%);
 }
 
 .mobilboxtext{
-  font-family: "The Seasons Bold";
+  font-family: "The Seasons-Bold";
   color: white;
   font-size: 24px;
 }
@@ -503,73 +524,92 @@ select.form-control:focus::-ms-value {
 
 /*Item Page Specific CSS*/
 
-.Item_Title{
-  color: black;
-  font-family: The Seasons-Bold;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 400%;
-}
+
 
 .bencol{
   right:50%;
   z-index:-1;
 }
 
-.Price_Blazer{
-  font-family: The Seasons-Bold;
+.priceblazer{
+  font-family: "The Seasons-Regular";
   color: black;
   font-style: normal;
-  font-weight: 500;
-  font-size: 400%;
+  font-weight: 400;
+  font-size: 54px;
+}
+.priceblazer2{
+  font-family: "The Seasons-Regular";
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
 }
 
 .Collection
 {
-  font-family: Gallient-Regular;
+  font-family: "Gallient-Regular";
   color: black;
   font-style: normal;
   font-weight: 500;
   font-size: 200%;
 }
 
+.star{
+  color: #FFCC86;
+}
+
+.colordot {
+width: 29px;
+height: 31.24px;
+background: #AC1C3D;
+}
+
+.background{
+  background-color: #F5F7FB;
+}
+
+.whitebox{
+
+background: #FFFFFF;
+}
 /*Cart Page*/
 
 
 .cartheader {
-  font-family: "The Seasons Bold";
+  font-family: "The Seasons-Bold";
   color:black;
   font-size: 36px;
 }
 @media (max-width: 768px) {
   .cartheader {
-    font-family: "The Seasons Bold";
+    font-family: "The Seasons-Bold";
     color:black;
     font-size: 24px;
   }}
   
 
 @font-face {
-  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-family: "Helvetica Neue LT Pro-65Medium";
   font-style: normal;
   font-weight: normal;
   src: local("Helvetica Neue LT Pro 65 Medium"), url(./fonts/HelveticaNeueLTProMd.otf);
 }
 
 .ordertext1{
-  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-family: "Helvetica Neue LT Pro-65Medium";
   font-size: 24px;
   color: black;
   padding-bottom: 0% !important;
 }
 
 .ordertext2{
-  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-family: "Helvetica Neue LT Pro-55Roman";
   font-size: 16px;
   color: black;
 }
 .ordertext3{
-  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-family: "Helvetica Neue LT Pro-55Roman";
   font-size: 16px;
   color: black;
   text-decoration-line: underline !important;
@@ -577,45 +617,45 @@ select.form-control:focus::-ms-value {
 
 @media (max-width: 768px) {
   .ordertext2{
-    font-family: "Helvetica Neue LT Pro 55 Roman";
+    font-family: "Helvetica Neue LT Pro-55Roman";
     font-size: 14px;
     color: black;
   }
 }
 .cartheading{
-  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-family: "Helvetica Neue LT Pro-65Medium";
   font-size: 18px;
   color: black;
   padding-bottom: 0% !important;
 }
 @media (max-width: 768px) {
   .cartheading{
-    font-family: "Helvetica Neue LT Pro 65 Medium";
+    font-family: "Helvetica Neue LT Pro-65Medium";
     font-size: 16px;
     color: black;
     padding-bottom: 0% !important;
   }}
   
 .checkoutbutton{
-  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-family: "Helvetica Neue LT Pro-65Medium";
   font-size: 18px;
   color: white;
 }
 /*Checkout Process*/
 
 .checkouttheader {
-  font-family: "The Seasons Bold";
+  font-family: "The Seasons-Bold";
   color:black;
   font-size: 36px;
 }
 @media (max-width: 768px) {
   .checkouttheader {
-    font-family: "The Seasons Bold";
+    font-family: "The Seasons-Bold";
     color:black;
     font-size: 30px;
   }}
   .progressnumber{
-  font-family: "Gallient Regular";
+  font-family: "Gallient-Regular";
   color:black;
   font-size: 64px;
   font-style: normal;

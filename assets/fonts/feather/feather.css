@@ -72,7 +72,7 @@
   content: "\e90f";
 }
 .fe-arrow-left:before {
-  content: "\e910";
+  content: "\e910" !important;
 }
 .fe-arrow-left-circle:before {
   content: "\e911";
@@ -667,6 +667,7 @@
 }
 .fe-star:before {
   content: "\e9d5";
+  color: #FFCC86;
 }
 .fe-stop-circle:before {
   content: "\e9d6";
