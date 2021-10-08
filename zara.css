@@ -511,7 +511,7 @@ select.form-control:focus::-ms-value {
   font-size: 400%;
 }
 
-.col-10{
+.bencol{
   right:50%;
   z-index:-1;
 }
@@ -694,7 +694,7 @@ padding-left: 0% !important;
 .input-items {
   margin-bottom: 10px
 }
-=======
+
 .shiptable{
   border-left: 1px black;
   border-right: 1 px black;

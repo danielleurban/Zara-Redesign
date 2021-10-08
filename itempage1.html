@@ -402,7 +402,7 @@
     </nav>
 
 
-  <!-- Item Page Body -->
+    <!-- Item Page Body -->
 
     <!-- PRODUCT -->
     <section>
@@ -417,32 +417,38 @@
                   <div class="col-2">
 
                     <!-- Slider -->
-                    <div class="flickity-nav flickity-vertical" data-flickity='{"asNavFor": "#productSlider", "draggable": false}'>
+                    <div class="flickity-nav flickity-vertical"
+                      data-flickity='{"asNavFor": "#productSlider", "draggable": false}'>
 
                       <!-- Item -->
-                      <div class="embed-responsive embed-responsive-1by1 bg-cover mb-4" style="background-image: url(images/fuschia-blazer-1--1@2x.png);"></div>
+                      <div class="embed-responsive embed-responsive-1by1 bg-cover mb-4"
+                        style="background-image: url(images/fuschia-blazer-1--1@2x.png);"></div>
 
                       <!-- Item -->
-                      <div class="embed-responsive embed-responsive-1by1 bg-cover mb-4" style="background-image: url(images/fuschia-blazer-2-1@2x.png);"></div>
+                      <div class="embed-responsive embed-responsive-1by1 bg-cover mb-4"
+                        style="background-image: url(images/fuschia-blazer-2-1@2x.png);"></div>
 
                       <!-- Item -->
-                      <div class="embed-responsive embed-responsive-1by1 bg-cover mb-4" style="background-image: url(images/fuschia-blazer-3-1@2x.png);"></div>
+                      <div class="embed-responsive embed-responsive-1by1 bg-cover mb-4"
+                        style="background-image: url(images/fuschia-blazer-3-1@2x.png);"></div>
 
                       <!-- Item -->
-                      <div class="embed-responsive embed-responsive-1by1 bg-cover mb-4" style="background-image: url(images/fuschia-blazer-4--main-product-page-photo--2@2x.png);"></div>
+                      <div class="embed-responsive embed-responsive-1by1 bg-cover mb-4"
+                        style="background-image: url(images/fuschia-blazer-4--main-product-page-photo--2@2x.png);">
+                      </div>
 
                     </div>
 
                   </div>
-                  <div class="col-10">
+                  <div class="bencol">
 
                     <!-- Card -->
                     <div class="card">
-                        <!-- Item -->
-                        <a href="assets/img/products/product-112.jpg" data-fancybox>
-                          <img class="Main_Blazer"  img src="images/Item Page_Blazer1.png">
-                        </a>
-                        
+                      <!-- Item -->
+                      <a href="assets/img/products/product-112.jpg" data-fancybox>
+                        <img class="Main_Blazer" img src="images/Item Page_Blazer1.png">
+                      </a>
+
                       <!-- Slider -->
                       <div data-flickity='{"draggable": false, "fade": true}' id="productSlider"></div>
                     </div>
@@ -460,144 +466,160 @@
                   </div>
                   <div class="col-auto">
 
-         
 
-                <!-- Heading -->
-                <h3 class="Item_Title">Fuchsia Blazer</h3>
 
-                <!-- Collection -->
-                <h3 class="Collection">Join Life Collection</h3>
+                    <!-- Heading -->
+                    <h3 class="Item_Title">Fuchsia Blazer</h3>
 
-                
+                    <!-- Collection -->
+                    <h3 class="Collection">Join Life Collection</h3>
 
-                <!-- Price -->
-                <div class="mb-7 text-gray-400">
-                  <span class="Price_Blazer">$48.00</span>
+
+
+                    <!-- Price -->
+                    <div class="mb-7 text-gray-400">
+                      <span class="Price_Blazer">$48.00</span>
+                    </div>
+
+                    <!-- Form -->
+                    <form>
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <p class="mb-4">
+                          Color: <strong id="colorCaption">Fuchsia</strong>
+                        </p>
+
+                        <!-- Radio -->
+                        <div class="mb-8 ml-n1">
+                          <div class="custom-control custom-control-inline custom-control-img">
+                            <input type="radio" class="custom-control-input" id="imgRadioOne" name="imgRadio"
+                              data-toggle="form-caption" data-target="#colorCaption" value="White" checked>
+                            <label class="custom-control-label" for="imgRadioOne">
+                              <span class="embed-responsive embed-responsive-1by1 bg-cover"
+                                style="background-image: url(images/fuschia-blazer-5-1@2x.png);"></span>
+                            </label>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <p class="mb-4">
+                          Size: <strong><span id="sizeCaption">Choose size</span></strong>
+                        </p>
+
+                        <!-- Radio -->
+                        <div class="mb-2">
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="modalWaitListSize"
+                              id="modalWaitListSizeOne" value="6" data-toggle="form-caption"
+                              data-target="#modalWaitListSizeCaption">
+                            <label class="custom-control-label" for="modalWaitListSizeOne">3XS</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioTwo"
+                              value="6.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioTwo">2XS</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioThree"
+                              value="7" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioThree">XS</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFour"
+                              value="7.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioFour">SM</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFive"
+                              value="8" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioFive">MD</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioSix"
+                              value="8.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioSix">LG</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioSeven"
+                              value="9" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioSeven">XL</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioEight"
+                              value="9.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioEight">2XL</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioNine"
+                              value="10" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioNine">3XL</label>
+                          </div>
+                          <div class="custom-control custom-control-inline custom-control-size mb-2">
+                            <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioTen"
+                              value="10.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
+                            <label class="custom-control-label" for="sizeRadioTen">4XL</label>
+                          </div>
+                        </div>
+
+                        <!-- Size chart -->
+                        <p class="mb-8">
+                          <img src="assets/img/icons/icon-ruler.svg" alt="..." class="img-fluid"> <a
+                            class="text-reset text-decoration-underline ml-3" data-toggle="modal"
+                            href="#modalSizeChart">Size chart</a>
+                        </p>
+
+                        <div class="form-row mb-7">
+                          <div class="col-12 col-lg-auto">
+
+                            <!-- Submit -->
+                            <button class="btn btn-block btn-dark mb-2" data-toggle="button">
+                              <i class="fe fe-mail mr-2"></i> Add to Cart
+                            </button>
+
+                          </div>
+                          <div class="col-12 col-lg-auto">
+
+                            <!-- Wishlist -->
+                            <button class="btn btn-outline-dark btn-block mb-2" data-toggle="button">
+                              Wishlist <i class="fe fe-heart ml-2"></i>
+                            </button>
+
+                          </div>
+                        </div>
+
+                        <!-- Text -->
+                        <p>
+                          <span class="text-gray-500">Is your size/color sold out?</span>
+                          <a class="text-reset text-decoration-underline" data-toggle="modal" href="#modalWaitList">Join
+                            the Wait List!</a>
+                        </p>
+
+                        <!-- Share -->
+                        <p class="mb-0">
+                          <span class="mr-4">Share:</span>
+                          <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                          <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
+                            <i class="fab fa-pinterest-p"></i>
+                          </a>
+                        </p>
+
+                      </div>
+                    </form>
+
+                  </div>
                 </div>
-
-                <!-- Form -->
-                <form>
-                  <div class="form-group">
-
-                    <!-- Label -->
-                    <p class="mb-4">
-                      Color: <strong id="colorCaption">Fuchsia</strong>
-                    </p>
-
-                    <!-- Radio -->
-                    <div class="mb-8 ml-n1">
-                      <div class="custom-control custom-control-inline custom-control-img">
-                        <input type="radio" class="custom-control-input" id="imgRadioOne" name="imgRadio" data-toggle="form-caption" data-target="#colorCaption" value="White" checked>
-                        <label class="custom-control-label" for="imgRadioOne">
-                          <span class="embed-responsive embed-responsive-1by1 bg-cover" style="background-image: url(images/fuschia-blazer-5-1@2x.png);"></span>
-                        </label>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="form-group">
-
-                    <!-- Label -->
-                    <p class="mb-4">
-                      Size: <strong><span id="sizeCaption">Choose size</span></strong>
-                    </p>
-
-                    <!-- Radio -->
-                    <div class="mb-2">
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="modalWaitListSize" id="modalWaitListSizeOne" value="6" data-toggle="form-caption" data-target="#modalWaitListSizeCaption">
-                        <label class="custom-control-label" for="modalWaitListSizeOne">3XS</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioTwo" value="6.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioTwo">2XS</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioThree" value="7" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioThree">XS</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFour" value="7.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioFour">SM</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFive" value="8" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioFive">MD</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioSix" value="8.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioSix">LG</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioSeven" value="9" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioSeven">XL</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioEight" value="9.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioEight">2XL</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioNine" value="10" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioNine">3XL</label>
-                      </div>
-                      <div class="custom-control custom-control-inline custom-control-size mb-2">
-                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioTen" value="10.5" data-toggle="form-caption" data-target="#sizeCaption" disabled>
-                        <label class="custom-control-label" for="sizeRadioTen">4XL</label>
-                      </div>
-                    </div>
-
-                    <!-- Size chart -->
-                    <p class="mb-8">
-                      <img src="assets/img/icons/icon-ruler.svg" alt="..." class="img-fluid"> <a class="text-reset text-decoration-underline ml-3" data-toggle="modal" href="#modalSizeChart">Size chart</a>
-                    </p>
-
-                    <div class="form-row mb-7">
-                      <div class="col-12 col-lg-auto">
-
-                        <!-- Submit -->
-                        <button class="btn btn-block btn-dark mb-2" data-toggle="button">
-                          <i class="fe fe-mail mr-2"></i> Add to Cart
-                        </button>
-
-                      </div>
-                      <div class="col-12 col-lg-auto">
-
-                        <!-- Wishlist -->
-                        <button class="btn btn-outline-dark btn-block mb-2" data-toggle="button">
-                          Wishlist <i class="fe fe-heart ml-2"></i>
-                        </button>
-
-                      </div>
-                    </div>
-
-                    <!-- Text -->
-                    <p>
-                      <span class="text-gray-500">Is your size/color sold out?</span>
-                      <a class="text-reset text-decoration-underline" data-toggle="modal" href="#modalWaitList">Join the Wait List!</a>
-                    </p>
-
-                    <!-- Share -->
-                    <p class="mb-0">
-                      <span class="mr-4">Share:</span>
-                      <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                      <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                      <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
-                        <i class="fab fa-pinterest-p"></i>
-                      </a>
-                    </p>
-
-                  </div>
-                </form>
-
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </section>
 
     <!-- DESCRIPTION -->
@@ -629,8 +651,10 @@
 
                         <!-- Text -->
                         <p class="text-gray-500">
-                          Won't herb first male seas, beast. Let upon, female upon third fifth every. Man subdue rule after years herb after
-                          form. And image may, morning. Behold in tree day sea that together cattle whose. Fifth gathering brought
+                          Won't herb first male seas, beast. Let upon, female upon third fifth every. Man subdue rule
+                          after years herb after
+                          form. And image may, morning. Behold in tree day sea that together cattle whose. Fifth
+                          gathering brought
                           bearing. Abundantly creeping whose. Beginning form have void two. A whose.
                         </p>
 
@@ -710,7 +734,8 @@
                         <!-- Size -->
                         <p class="mb-0">
                           <img src="assets/img/icons/icon-ruler.svg" alt="..." class="img-fluid">
-                          <a class="text-reset text-decoration-underline ml-3" data-toggle="modal" href="#modalSizeChart">Size chart</a>
+                          <a class="text-reset text-decoration-underline ml-3" data-toggle="modal"
+                            href="#modalSizeChart">Size chart</a>
                         </p>
 
                       </div>
@@ -762,7 +787,8 @@
 
                     <!-- Caption -->
                     <p class="mb-0 text-gray-500">
-                      May, life blessed night so creature likeness their, for. <a class="text-body text-decoration-underline" href="#!">Find out more</a>
+                      May, life blessed night so creature likeness their, for. <a
+                        class="text-body text-decoration-underline" href="#!">Find out more</a>
                     </p>
 
                   </div>
@@ -808,7 +834,8 @@
                     <!-- Actions -->
                     <div class="card-actions">
                       <span class="card-action">
-                        <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal" data-target="#modalProduct">
+                        <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal"
+                          data-target="#modalProduct">
                           <i class="fe fe-eye"></i>
                         </button>
                       </span>
@@ -868,7 +895,8 @@
                     <!-- Actions -->
                     <div class="card-actions">
                       <span class="card-action">
-                        <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal" data-target="#modalProduct">
+                        <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal"
+                          data-target="#modalProduct">
                           <i class="fe fe-eye"></i>
                         </button>
                       </span>
@@ -933,7 +961,8 @@
                     <!-- Actions -->
                     <div class="card-actions">
                       <span class="card-action">
-                        <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal" data-target="#modalProduct">
+                        <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal"
+                          data-target="#modalProduct">
                           <i class="fe fe-eye"></i>
                         </button>
                       </span>
@@ -993,7 +1022,8 @@
                     <!-- Actions -->
                     <div class="card-actions">
                       <span class="card-action">
-                        <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal" data-target="#modalProduct">
+                        <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="modal"
+                          data-target="#modalProduct">
                           <i class="fe fe-eye"></i>
                         </button>
                       </span>
@@ -1120,7 +1150,8 @@
                     <!-- Name -->
                     <div class="form-group">
                       <label class="sr-only" for="reviewName">Your Name:</label>
-                      <input class="form-control form-control-sm" id="reviewName" type="text" placeholder="Your Name *" required>
+                      <input class="form-control form-control-sm" id="reviewName" type="text" placeholder="Your Name *"
+                        required>
                     </div>
 
                   </div>
@@ -1129,7 +1160,8 @@
                     <!-- Email -->
                     <div class="form-group">
                       <label class="sr-only" for="reviewEmail">Your Email:</label>
-                      <input class="form-control form-control-sm" id="reviewEmail" type="email" placeholder="Your Email *" required>
+                      <input class="form-control form-control-sm" id="reviewEmail" type="email"
+                        placeholder="Your Email *" required>
                     </div>
 
                   </div>
@@ -1138,7 +1170,8 @@
                     <!-- Name -->
                     <div class="form-group">
                       <label class="sr-only" for="reviewTitle">Review Title:</label>
-                      <input class="form-control form-control-sm" id="reviewTitle" type="text" placeholder="Review Title *" required>
+                      <input class="form-control form-control-sm" id="reviewTitle" type="text"
+                        placeholder="Review Title *" required>
                     </div>
 
                   </div>
@@ -1147,7 +1180,8 @@
                     <!-- Name -->
                     <div class="form-group">
                       <label class="sr-only" for="reviewText">Review:</label>
-                      <textarea class="form-control form-control-sm" id="reviewText" rows="5" placeholder="Review *" required></textarea>
+                      <textarea class="form-control form-control-sm" id="reviewText" rows="5" placeholder="Review *"
+                        required></textarea>
                     </div>
 
                   </div>
@@ -1295,7 +1329,8 @@
               <form class="mb-11">
                 <div class="form-row align-items-start">
                   <div class="col">
-                    <input type="email" class="form-control form-control-gray-700 form-control-lg" placeholder="Enter Email *">
+                    <input type="email" class="form-control form-control-gray-700 form-control-lg"
+                      placeholder="Enter Email *">
                   </div>
                   <div class="col-auto">
                     <button type="submit" class="btn btn-gray-500 btn-lg">Subscribe</button>
@@ -1486,4 +1521,5 @@
 
 
   </body>
+
 </html>
