@@ -6,7 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Favicons -->
+    <link rel="icon" href="./images/logo.png">
 
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/fonts/feather/feather.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,7 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
     <!--Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
 
     <!-- ZARA CSS -->
     <link rel="stylesheet" href="zara.css">
@@ -29,7 +40,713 @@
 
   <body>
 
+    <!--MOBILE NAV BAR-->
 
+    <nav class=" navbar navbar-expand navbar-light mobileonly ">
+      <div class="zaranav container">
+
+        <!-- Brand -->
+        <a class="px-4 pb-4" href="index.html"> <img class="img-fluid logo" src="./images/logo.png"></a>
+
+        <!-- Nav -->
+        <ul class="navbar-nav  d-md-flex ml-auto">
+          <li class="nav-item">
+            <a class="nav-link pb-2" data-toggle="modal" href="#modalSearch">
+              <i class="fe fe-search"></i>
+            </a>
+          </li>
+          <li class="nav-item pb-2 ml-lg-n4">
+            <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+              <i class="fe fe-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler d-block px-4 pb-4" type="button" data-toggle="modal" data-target="#modalSidebar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="modal fixed-right fade" id="modalSidebar" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-vertical" role="document">
+            <div class="modal-content">
+
+              <!-- Close -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-x" aria-hidden="true"></i>
+              </button>
+
+              <!-- Body -->
+              <div class="modal-body my-auto">
+
+                <!-- Nav -->
+                <ul class="nav nav-vertical nav-unstyled font-size-h2" id="sidebarNav">
+                  <li class="nav-item">
+
+                    <!-- Toggle -->
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarHome">
+                      COLLECTIONS
+                    </a>
+
+                    <!-- Toggle -->
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      WOMEN
+                    </a>
+
+                    <!-- Collapse -->
+                    <div class="collapse" id="sidebarCatalog" data-parent="#sidebarNav">
+                      <div class="row">
+                        <div class="col-12 py-3">
+
+                          <!-- Heading -->
+                          <div class="dropdownbox">
+                            <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">New!
+                            </h6>
+                          </div>
+                          <div class="dropdownbox">
+                            <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">Best Sellers</h6>
+                          </div>
+                          <div class="dropdownbox">
+                            <h6 class="mobiledropdownbold px-2 pt-4 dropdown-toggle">Collections</h6>
+                          </div>
+                          <div class="dropdownbox">
+                            <div class="mobiledropdownbold px-2 pt-4 dropdown-toggle">SHOP BY CATEGORY
+                            </div>
+                          </div>
+
+                          <!-- Links -->
+                          <ul class="list-styled font-size-lg">
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Tops</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">T-Shirts</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Shirts</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Knitwear</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="blazers.html">Jackets/Blazers</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Skirts/Shorts</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Dresses/Jumpsuits</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Jumpers & Cardigans</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Hoodies/Sweatshirts</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="./">Coats/Trenches</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Sets</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Jeans</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Suits</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Lingerie</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Bags</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Shoes</a>
+                            </li>
+                            <li class="list-styled-item dropdownbox">
+                              <a class="list-styled-link mobiledropdown" href="">Accessories</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      MEN
+                    </a>
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      KIDS
+                    </a>
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      BEAUTY
+                    </a>
+                    <a class="nav-link dropdown-toggle navtext" data-toggle="collapse" href="#sidebarCatalog">
+                      ABOUT
+                    </a>
+
+
+
+
+              </div>
+
+              <!-- Body -->
+              <div class="moda-body px-10 py-9">
+
+                <!-- Social links -->
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-gray-350" href="#!">
+                      <i class="fab fa-pinterest-p"></i>
+                    </a>
+                  </li>
+                </ul>
+                </ul>
+              </div>
+    </nav>
+
+
+    <nav class="navbar nav-unstyled navbar-expand-md navbar-default d-block mobilegoaway">
+      <!--Top Nav Bar-->
+      <nav class="zaranav mb-2 mobilegoaway">
+        <div class="container-fluid d-flex">
+          <div class="col-md-3 offset-md-1">
+            <a class="icon nav-link active" href="index.html"> <img class="img-fluid logo" src="./images/logo.png"></a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            </div>
+          </div>
+          <div class="col-md-4 offset-md-3 offsetright-md-1 justify-content-end">
+            <ul class="navbar-nav d-none d-md-flex ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" href="#modalSearch">
+                  <i class="fe fe-search px-2"></i>
+                </a>
+              </li>
+              <li class="nav-item ml-lg-n4">
+                <a class="nav-link" href="./account-orders.html">
+                  <i class="fe fe-user px-2"><span class="px-2 mb-2 navtexttop">LOGIN</span></i>
+                </a>
+              </li>
+              <li class="nav-item ml-lg-n4">
+                <a class="nav-link" href="./account-wishlist.html">
+                  <i class="fe fe-heart px-2"><span class="px-2 navtexttop">SAVED</span></i>
+                </a>
+              </li>
+              <li class="nav-item ml-lg-n4">
+                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+                  <i class="fe fe-shopping-cart"><span class="px-2 navtexttop">CART</span></i>
+                </a>
+              </li>
+            </ul>
+            <form class="d-block">
+            </form>
+          </div>
+        </div>
+        </div>
+        </div>
+      </nav>
+
+
+      <!--Second Nav Bar-->
+      <nav class="zaranav zaradropdown mobilegoaway">
+        <div class="container zaradropdown">
+          <div class=" zaradropdown collapse navbar-collapse" id="navbarCollapse">
+            <ul class=" zaradropdown navbar-nav mx-auto me-auto mb-5 mb-md-0 col-md-10 offset-md-2 text-center">
+              <!--Collections Drop Down-->
+              <li class="nav-item dropdown zaradropdown position-static hovered">
+                <a class="nav-link active navtext px-4 ps-5 ms-7" aria-current="page" data-toggle="dropdown" href="#"
+                  aria-expanded="true">COLLECTIONS</a>
+              </li>
+
+              <!--Women Dropdown Section-->
+
+              <li class="nav-item dropdown position-static hovered">
+                <a class="nav-link active navtext px-4" aria-current="page" data-toggle="dropdown" href="#"
+                  aria-expanded="true">WOMEN</a>
+                <!-- Menu -->
+                <div class="dropdown-menu w-100 mobilegoaway">
+
+
+                  <div class="dropdown-menu show" style="min-width: 650px;">
+                    <div class="card card-lg">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4">
+
+                            <!-- Heading -->
+                            <div class="mb-5 newslettertextmobile px-4 ">Shop by Category</div>
+
+                            <!-- Links -->
+                            <ul class="list-styled mb-6 mb-md-0 mt-1 font-size-sm px-4">
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Tops</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">T-Shirts</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Shirts</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Knitwear</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Jackets/Blazers</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Skirts/Shorts</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Dresses/Jumpsuits</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext " href="../shop.html">Hoodies/Sweatshirts</a>
+                              </li>
+                            </ul>
+
+                            <!-- Heading -->
+
+
+                          </div>
+                          <div class="col-3">
+
+                            <!-- Heading -->
+                            <ul class="list-styled mt-6 pt-6 pe-4">
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Coats/Trenches</a>
+                              </li>
+                              <li class="list-styled-item ">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Sets</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Jeans</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Suits</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Lingerie</a>
+                              </li>
+                              <li class="list-styled-item">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Bags</a>
+                              </li>
+                              <li class="list-styled-item ">
+                                <a class="list-styled-link dropdowntext" href="../shop.html">Shoes</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-5 px-5">
+
+                            <!-- Links -->
+                            <!-- Heading -->
+                            <div class="mb-0 font-weight-bold newslettertextmobile">NEW</div>
+                            <p class="dropdowntext">Snag these fresh new arrivals</p>
+
+                            <!-- Heading -->
+                            <div class="mb-0 font-weight-bold newslettertextmobile">BEST SELLERS</div>
+                            <p class="dropdowntext">Check out our favorite styles</p>
+                            <!-- Heading -->
+                            <div class="mb-0 newslettertextmobile">COLLECTIONS</div>
+                            <p class="dropdowntext">Shop our collection lookbooks</p>
+
+                            <!-- Heading -->
+                            <div class="mb-0 font-weight-bold newslettertextmobile">FALL/WINTER 2021</div>
+                            <p class="dropdowntext">Get cozy in our fall collection</p>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+              </li>
+
+
+              <li class="nav-item">
+                <a class="icon nav-link active navtext px-4" href="">KIDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="icon nav-link active navtext px-4" href="">BEAUTY</a>
+              </li>
+              <li class="nav-item">
+                <a class="icon nav-link active navtext px-4" href="">ABOUT</a>
+              </li>
+            </ul>
+            <form class="d-block">
+            </form>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </nav>
+
+    <!--Page Content-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-md-6">
+
+                <!-- Card -->
+                <div class="card">
+
+
+
+
+                  <!-- Slider -->
+                  <div class="mb-4 flickity-enabled is-fade"
+                    data-flickity="{&quot;draggable&quot;: false, &quot;fade&quot;: true}" id="productSlider"
+                    tabindex="0">
+
+                    <!-- Item -->
+
+
+                    <!-- Item -->
+
+
+                    <!-- Item -->
+
+
+                    <div class="flickity-viewport" style="height: 637.625px; touch-action: pan-y;">
+                      <div class="flickity-slider" style="left: 0px; transform: translateX(0%);"><a
+                          href="./images/fuschiablazer1@.png" data-fancybox="" class="is-selected"
+                          style="position: absolute; left: 0%; opacity: 1;">
+                          <img src="./images/fuschiablazer1@.png" alt="..." class="card-img-top">
+                        </a><a href="./images/fuschiablazer1@.png" data-fancybox="" aria-hidden="true"
+                          style="position: absolute; left: 0%; opacity: 0;">
+                          <img src="./images/fuschiablazer1@.png" alt="..." class="card-img-top">
+                        </a><a href="./images/fuschiablazer1@.png" data-fancybox="" aria-hidden="true"
+                          style="position: absolute; left: 0%; opacity: 0;">
+                          <img src="assets/img/products/product-146.jpg" alt="..." class="card-img-top">
+                        </a></div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Slider -->
+                <div class="flickity-nav mx-n2 mb-10 mb-md-0 flickity-enabled is-draggable"
+                  data-flickity="{&quot;asNavFor&quot;: &quot;#productSlider&quot;, &quot;contain&quot;: true, &quot;wrapAround&quot;: false}"
+                  tabindex="0">
+
+                  <!-- Item -->
+
+
+                  <!-- Item -->
+
+
+                  <!-- Item -->
+
+
+                  <div class="flickity-viewport" style="height: 97px; touch-action: pan-y;">
+                    <div class="flickity-slider" style="left: 0px; transform: translateX(0%);">
+                      <div class="col-12 px-2 is-nav-selected is-selected"
+                        style="max-width: 113px; position: absolute; left: 0%;">
+
+                        <!-- Image -->
+                        <div class="embed-responsive embed-responsive-1by1 bg-cover"
+                          style="background-image: url(./images/fuschiablazer1@.png);"></div>
+
+                      </div>
+                      <div class="col-12 px-2" style="max-width: 113px; position: absolute; left: 20.4%;"
+                        aria-hidden="true">
+
+                        <!-- Image -->
+                        <div class="embed-responsive embed-responsive-1by1 bg-cover"
+                          style="background-image: url(assets/img/products/product-122.jpg);"></div>
+
+                      </div>
+                      <div class="col-12 px-2" style="max-width: 113px; position: absolute; left: 40.79%;"
+                        aria-hidden="true">
+
+                        <!-- Image -->
+                        <div class="embed-responsive embed-responsive-1by1 bg-cover"
+                          style="background-image: url(assets/img/products/product-146.jpg);"></div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6 pl-lg-10">
+
+                <!-- Header -->
+                <div class="row mb-1">
+                  <div class="col">
+
+                    <!-- Preheading -->
+                    <a class="text-muted" href="shop.html">Sneakers</a>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Rating -->
+                    <div class="rating font-size-xs text-dark" data-value="4">
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+
+                    <a class="font-size-sm text-reset ml-2" href="#reviews">
+                      Reviews (6)
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- Heading -->
+                <h3 class="mb-2">Leather Sneakers</h3>
+
+                <!-- Price -->
+                <div class="mb-7">
+                  <span class="font-size-lg font-weight-bold text-gray-350 text-decoration-line-through">$115.00</span>
+                  <span class="ml-1 font-size-h5 font-weight-bolder text-primary">$85.00</span>
+                  <span class="font-size-sm ml-1">(In Stock)</span>
+                </div>
+
+                <!-- Form -->
+                <form>
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <p class="mb-5">
+                      Color: <strong id="colorCaption">White</strong>
+                    </p>
+
+                    <!-- Radio -->
+                    <div class="mb-8 ml-n1">
+                      <div class="custom-control custom-control-inline custom-control-img">
+                        <input type="radio" class="custom-control-input" id="imgRadioOne" name="imgRadio"
+                          data-toggle="form-caption" data-target="#colorCaption" value="White" checked="">
+                        <label class="custom-control-label" for="imgRadioOne">
+                          <span class="embed-responsive embed-responsive-1by1 bg-cover"
+                            style="background-image: url(./images/fuschiablazer1@.png);"></span>
+                        </label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-img">
+                        <input type="radio" class="custom-control-input" id="imgRadioTwo" name="imgRadio"
+                          data-toggle="form-caption" data-target="#colorCaption" value="Black">
+                        <label class="custom-control-label" for="imgRadioTwo">
+                          <span class="embed-responsive embed-responsive-1by1 bg-cover"
+                            style="background-image: url(assets/img/products/product-49.jpg);"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <p class="mb-5">
+                      Size: <strong><span id="sizeCaption">12</span> US</strong>
+                    </p>
+
+                    <!-- Radio -->
+                    <div class="mb-2">
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioOne" value="6"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioOne">6</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioTwo" value="6.5"
+                          data-toggle="form-caption" data-target="#sizeCaption" disabled="">
+                        <label class="custom-control-label" for="sizeRadioTwo">6.5</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioThree" value="7"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioThree">7</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFour" value="7.5"
+                          data-toggle="form-caption" data-target="#sizeCaption" checked="">
+                        <label class="custom-control-label" for="sizeRadioFour">7.5</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFive" value="8"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioFive">8</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioSix" value="8.5"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioSix">8.5</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioSeven" value="9"
+                          data-toggle="form-caption" data-target="#sizeCaption" disabled="">
+                        <label class="custom-control-label" for="sizeRadioSeven">9</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioEight"
+                          value="9.5" data-toggle="form-caption" data-target="#sizeCaption" disabled="">
+                        <label class="custom-control-label" for="sizeRadioEight">9.5</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioNine" value="10"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioNine">10</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioTen" value="10.5"
+                          data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioTen">10.5</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioEleven"
+                          value="11" data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioEleven">11</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioTwelve"
+                          value="12" data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioTwelve">12</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioThirteen"
+                          value="13" data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioThirteen">13</label>
+                      </div>
+                      <div class="custom-control custom-control-inline custom-control-size mb-2">
+                        <input type="radio" class="custom-control-input" name="sizeRadio" id="sizeRadioFourteen"
+                          value="14" data-toggle="form-caption" data-target="#sizeCaption">
+                        <label class="custom-control-label" for="sizeRadioFourteen">14</label>
+                      </div>
+                    </div>
+
+                    <!-- Size chart -->
+                    <p class="mb-8">
+                      <img src="assets/img/icons/icon-ruler.svg" alt="..." class="img-fluid"> <a
+                        class="text-reset text-decoration-underline ml-3" data-toggle="modal"
+                        href="#modalSizeChart">Size chart</a>
+                    </p>
+
+                    <div class="form-row mb-7">
+                      <div class="col-12 col-lg-auto">
+
+                        <!-- Quantity -->
+                        <select class="custom-select mb-2">
+                          <option value="1" selected="">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+
+                      </div>
+                      <div class="col-12 col-lg">
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-block btn-dark mb-2">
+                          Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
+                        </button>
+
+                      </div>
+                      <div class="col-12 col-lg-auto">
+
+                        <!-- Wishlist -->
+                        <button class="btn btn-outline-dark btn-block mb-2" data-toggle="button">
+                          Wishlist <i class="fe fe-heart ml-2"></i>
+                        </button>
+
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p>
+                      <span class="text-gray-500">Is your size/color sold out?</span>
+                      <a class="text-reset text-decoration-underline" data-toggle="modal" href="#modalWaitList">Join the
+                        Wait List!</a>
+                    </p>
+
+                    <!-- Share -->
+                    <p class="mb-0">
+                      <span class="mr-4">Share:</span>
+                      <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a class="btn btn-xxs btn-circle btn-light font-size-xxxs text-gray-350" href="#!">
+                        <i class="fab fa-pinterest-p"></i>
+                      </a>
+                    </p>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer class="footer mt-auto py-3 zarafooter nohorizontalscroll">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 nopadding align-items-md-end">
+            <div class="newslettertextmobile pt-3 pb-md-3">SIGN UP FOR OUR
+              NEWSLETTER</div>
+            <div class="form-group">
+              <input class="form-control form-control-sm" id="checkoutBillingEmail" type="email" placeholder="Email"
+                required="">
+            </div>
+          </div>
+          <div class="col-md-6  nopadding offset-md-1 align-items-md-start">
+            <ul class="footerlist nopadding">
+              <li class="footertext">TIKTOK</li>
+              <li class="footertext">INSTAGRAM</li>
+              <li class="footertext">FACEBOOK</li>
+              <li class="footertext mobilegoaway">TWITTER</li>
+              <li class="footertext mobilegoaway">PINTEREST</li>
+              <li class="footertext mobilegoaway">YOUTUBE</li>
+            </ul>
+
+            <p class="footertext ps-2">DO NOT SELL MY PERSONAL INFORMATION | PRIVACY AND COOKIES POLICY | TERMS OF USES
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -667,6 +667,7 @@
 }
 .fe-star:before {
   content: "\e9d5";
+  color: #FFCC86;
 }
 .fe-stop-circle:before {
   content: "\e9d6";
