@@ -254,7 +254,7 @@
               <li class="nav-item ml-lg-n4">
                 <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
                   <i class="fe fe-shopping-cart"><span class="px-2 navtexttop">CART</span></i>
-                  <span data-cart-items="2">
+                  <span data-cart-items="4">
                   </span>
                 </a>
                 </a>
@@ -514,7 +514,8 @@
                       <div class="col-12 col-lg">
 
                         <!-- Submit -->
-                        <button type="submit" class="btn btn-block btn-dark mb-2">
+                        <button type="submit" class="btn btn-block btn-dark mb-2" data-toggle="modal"
+                          data-target="#itemadded2">
                           Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
                         </button>
 
@@ -539,7 +540,162 @@
       </div>
     </div>
 
+    <!--Blazer Added to Cart-->
 
+    <!--Modal for Blazer Added to Cart-->
+    <div class="modal" id="itemadded" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              1 Item was added to your cart!
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <img class="img-fluid w-100" src="./images/pinkblazer.jpg" alt="fuschia blazer">
+              </div>
+              <div class="col-md-6">
+                <p class="cartheader">Fuchsia Blazer</p>
+                <p class="ordertext2 nomargin">$49.90</p>
+                <p class="ordertext2 nomargin">Size: M</p>
+                <p class="ordertext2 nomargin">QTY:1</p>
+                <p class="ordertext2 nomargin">Color:<img class=" px-2" src="images/colordot.svg">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Go to
+              Cart</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Continue
+              Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for Bodysuit Added to Cart-->
+    <div class="modal" id="itemadded2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              1 Item was added to your cart!
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <img class="img-fluid w-100" src="./images/pinkbodysuit.webp" alt="fuschia blazer">
+              </div>
+              <div class="col-md-6">
+                <p class="cartheader">Padded Underwire Bodysuit</p>
+                <p class="ordertext2 nomargin">$39.90</p>
+                <p class="ordertext2 nomargin">Size: M</p>
+                <p class="ordertext2 nomargin">QTY:1</p>
+                <p class="ordertext2 nomargin">Color:<img class=" px-2" src="images/colordot.svg">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Go to
+              Cart</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Continue
+              Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for Pants being Added to Cart-->
+    <div class="modal" id="itemadded3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              1 Item was added to your cart!
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <img class="img-fluid w-100" src="./images/pinkpants.webp" alt="fuschia blazer">
+              </div>
+              <div class="col-md-6">
+                <p class="cartheader">Ankle Pants</p>
+                <p class="ordertext2 nomargin">$69.90</p>
+                <p class="ordertext2 nomargin">Size: M</p>
+                <p class="ordertext2 nomargin">QTY:1</p>
+                <p class="ordertext2 nomargin">Color:<img class=" px-2" src="images/colordot.svg">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Go to
+              Cart</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Continue
+              Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal for Shoes being Added to Cart-->
+    <div class="modal" id="itemadded4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              1 Item was added to your cart!
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <img class="img-fluid w-100" src="./images/blackheels.webp" alt="fuschia blazer">
+              </div>
+              <div class="col-md-6">
+                <p class="cartheader">Leather High Heeled Sandals</p>
+                <p class="ordertext2 nomargin">$169.00</p>
+                <p class="ordertext2 nomargin">Size: M</p>
+                <p class="ordertext2 nomargin">QTY:1</p>
+                <p class="ordertext2 nomargin">Color:<img class=" px-2" src="images/blackdot.svg">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Go to
+              Cart</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Continue
+              Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Search -->
     <div class="modal fixed-right fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical" role="document">
@@ -710,7 +866,7 @@
 
           <!-- Header-->
           <div class="modal-header line-height-fixed font-size-lg">
-            <strong class="mx-auto">Your Cart (2)</strong>
+            <strong class="mx-auto">Your Cart (4)</strong>
           </div>
 
           <!-- List group -->
@@ -721,7 +877,7 @@
 
                   <!-- Image -->
                   <a href="./product.html">
-                    <img class="img-fluid" src="./assets/img/products/product-6.jpg" alt="...">
+                    <img class="img-fluid" src="./images/itempageimages/fuschiablazer3.png" alt="...">
                   </a>
 
                 </div>
@@ -729,8 +885,9 @@
 
                   <!-- Title -->
                   <p class="font-size-sm font-weight-bold mb-6">
-                    <a class="text-body" href="./product.html">Cotton floral print Dress</a> <br>
-                    <span class="text-muted">$40.00</span>
+                    <a class="ordertext2" href="./product.html">Fuchsia Blazer</a> <br>
+                    <span class="text-muted">$49.90</span>
+                    <span class="text-muted">Size: M</span>
                   </p>
 
                   <!--Footer -->
@@ -753,13 +910,15 @@
                 </div>
               </div>
             </li>
+
+            <!--Item in Cart #2-->
             <li class="list-group-item">
               <div class="row align-items-center">
                 <div class="col-4">
 
                   <!-- Image -->
                   <a href="./product.html">
-                    <img class="img-fluid" src="./assets/img/products/product-10.jpg" alt="...">
+                    <img class="img-fluid" src="./images/pinkbodysuit.webp" alt="...">
                   </a>
 
                 </div>
@@ -767,8 +926,92 @@
 
                   <!-- Title -->
                   <p class="font-size-sm font-weight-bold mb-6">
-                    <a class="text-body" href="./product.html">Suede cross body Bag</a> <br>
-                    <span class="text-muted">$49.00</span>
+                    <a class="ordertext2" href="./product.html">Padded Underwire Bodysuit</a> <br>
+                    <span class="text-muted">$39.90</span>
+                    <span class="text-muted">Size: L</span>
+                  </p>
+
+                  <!--Footer -->
+                  <div class="d-flex align-items-center">
+
+                    <!-- Select -->
+                    <select class="custom-select custom-select-xxs w-auto">
+                      <option value="1">1</option>
+                      <option value="1">2</option>
+                      <option value="1">3</option>
+                    </select>
+
+                    <!-- Remove -->
+                    <a class="font-size-xs text-gray-400 ml-auto" href="#!">
+                      <i class="fe fe-x"></i> Remove
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+
+            <!--Item in Cart #4-->
+
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-4">
+
+                  <!-- Image -->
+                  <a href="./product.html">
+                    <img class="img-fluid" src="./images/pinkpants.webp" alt="...">
+                  </a>
+
+                </div>
+                <div class="col-8">
+
+                  <!-- Title -->
+                  <p class="font-size-sm font-weight-bold mb-6">
+                    <a class="ordertext2" href="./product.html">Ankle Pants</a> <br>
+                    <span class="text-muted">$35.90</span>
+                    <span class="text-muted">Size: M</span>
+                  </p>
+
+                  <!--Footer -->
+                  <div class="d-flex align-items-center">
+
+                    <!-- Select -->
+                    <select class="custom-select custom-select-xxs w-auto">
+                      <option value="1">1</option>
+                      <option value="1">2</option>
+                      <option value="1">3</option>
+                    </select>
+
+                    <!-- Remove -->
+                    <a class="font-size-xs text-gray-400 ml-auto" href="#!">
+                      <i class="fe fe-x"></i> Remove
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <!--Item in Cart #3-->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-4">
+
+                  <!-- Image -->
+                  <a href="./product.html">
+                    <img class="img-fluid" src="./images/blackheels.webp" alt="...">
+                  </a>
+
+                </div>
+                <div class="col-8">
+
+                  <!-- Title -->
+                  <p class="font-size-sm font-weight-bold mb-6">
+                    <a class="ordertext2" href="./product.html">Leather High Heeled Sandals</a> <br>
+                    <span class="text-muted">$169.90</span>
+                    <span class="text-muted">Size: 8</span>
                   </p>
 
                   <!--Footer -->
@@ -795,13 +1038,13 @@
 
           <!-- Footer -->
           <div class="modal-footer line-height-fixed font-size-sm bg-light mt-auto">
-            <strong>Subtotal</strong> <strong class="ml-auto">$89.00</strong>
+            <strong>Subtotal</strong> <strong class="ml-auto">$294.70</strong>
           </div>
 
           <!-- Buttons -->
           <div class="modal-body">
-            <a class="btn btn-block btn-dark" href="./checkout.html">Continue to Checkout</a>
-            <a class="btn btn-block btn-outline-dark" href="./shopping-cart.html">View Cart</a>
+            <a class="btn btn-block btn-dark" href="./cart.html">Continue to Checkout</a>
+            <a class="btn btn-block btn-outline-dark" href="./cart.html">View Cart</a>
           </div>
 
         </div>
@@ -1644,23 +1887,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- BREADCRUMB -->
     <nav class="py-5">
       <div class="container">
@@ -1810,7 +2036,7 @@
 
 
                   </div>
-                  <div class="form-group">
+                  <div class="">
 
                     <!-- Label -->
                     <p class="mb-4 mt-4">
@@ -1871,55 +2097,12 @@
                         <div class="col-12 col-lg">
 
                           <!-- Submit -->
-                          <button type="submit" class="btn btn-block btn-dark mb-2" data-toggle="modal"
+                          <button type="button" class="btn btn-block btn-dark mb-2" data-toggle="modal"
                             data-target="#itemadded">
                             Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
                           </button>
 
-                          <!--Modal-->
-                          <div class="modal fade" id="itemadded" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">
-                                    1 Item was added to your cart!
-                                  </h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  <div class="row">
-                                    <div class="col-md-6 text-center">
-                                      <img class="img-fluid" src="./images/itempageimages/fuschiablazer3.png"
-                                        alt="fuschia blazer">
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p class="cartheader">Fuchsia Blazer</p>
-                                      <p class="ordertext2 nomargin">$49.90</p>
-                                      <p class="ordertext2 nomargin">Size: M</p>
-                                      <p class="ordertext2 nomargin">QTY:1</p>
-                                      <p class="ordertext2 nomargin">Color:<img class="img-fluid px-2"
-                                          src="images/colordot.svg">
-                                      </p>
 
-
-                                    </div>
-
-
-                                  </div>
-                                </div>
-                                <div class=" modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Go to
-                                    Cart</button>
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Continue
-                                    Shopping
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                           </p>
                         </div>
                       </div>
@@ -2006,7 +2189,7 @@
                         $39.90
                       </div>
                       <button type="submit" class="btn btn-block btn-dark mb-2 mt-4" data-toggle="modal"
-                        data-target="#itemadded">
+                        data-target="#itemadded2">
                         Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
                       </button>
                     </div>
@@ -2065,7 +2248,7 @@
                         $69.90
                       </div>
                       <button type="submit" class="btn btn-block btn-dark mb-2 mt-4" data-toggle="modal"
-                        data-target="#itemadded">
+                        data-target="#itemadded3">
                         Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
                       </button>
                     </div>
@@ -2117,7 +2300,7 @@
                         <span class="text-primary">$169.00</span>
                       </div>
                       <button type="submit" class="btn btn-block btn-dark mb-2 mt-4" data-toggle="modal"
-                        data-target="#itemadded">
+                        data-target="#itemadded4">
                         Add to Cart <i class="fe fe-shopping-cart ml-2"></i>
                       </button>
                     </div>
@@ -2348,6 +2531,36 @@
         </div>
       </section>
 
+      <!--footer-->
+      <footer class="footer mt-auto py-3 zarafooter nohorizontalscroll">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 nopadding align-items-md-end">
+              <div class="newslettertextmobile pt-3 pb-md-3">SIGN UP FOR OUR
+                NEWSLETTER</div>
+              <div class="form-group">
+                <input class="form-control form-control-sm" id="checkoutBillingEmail" type="email" placeholder="Email"
+                  required="">
+              </div>
+            </div>
+            <div class="col-md-6  nopadding offset-md-1 align-items-md-start">
+              <ul class="footerlist nopadding">
+                <li class="footertext">TIKTOK</li>
+                <li class="footertext">INSTAGRAM</li>
+                <li class="footertext">FACEBOOK</li>
+                <li class="footertext mobilegoaway">TWITTER</li>
+                <li class="footertext mobilegoaway">PINTEREST</li>
+                <li class="footertext mobilegoaway">YOUTUBE</li>
+              </ul>
+
+              <p class="footertext ps-2">DO NOT SELL MY PERSONAL INFORMATION | PRIVACY AND COOKIES POLICY | TERMS OF
+                USES
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </footer>
 
 
 
