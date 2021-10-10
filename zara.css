@@ -660,6 +660,14 @@ background: #FFFFFF;
   font-size: 64px;
   font-style: normal;
   }
+
+  .progressnumber1{
+    font-family: "Gallient-Regular";
+    color:black;
+    font-size: 48px;
+    font-style: normal;
+    }
+
   .progressline {
     display: inline-block;
     border-top: 1px solid black;
